@@ -1,17 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
-  Activity, 
-  ShieldCheck, 
-  Cpu, 
-  Sparkles, 
-  AlertCircle, 
+  Landmark, 
   Bell, 
   Check, 
   Trash2, 
-  ExternalLink,
-  ShieldAlert,
-  ArrowRight,
-  X
+  X,
+  FileText,
+  AlertTriangle,
+  Info
 } from 'lucide-react';
 
 const API_BASE = import.meta.env.VITE_API_BASE || '';
@@ -23,7 +19,6 @@ export default function Header({ backendHealth, isCheckingHealth, onSelectNotifi
   const [notifications, setNotifications] = useState([]);
   const [unreadCount, setUnreadCount] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
   const dropdownRef = useRef(null);
 
   // Fetch persistent notifications
@@ -103,107 +98,105 @@ export default function Header({ backendHealth, isCheckingHealth, onSelectNotifi
   };
 
   return (
-    <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+    <header className="border-b border-[#393C33] bg-[#171916]/95 backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col md:flex-row items-center justify-between gap-3">
-        {/* Brand */}
+        {/* Brand Identity */}
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-blue-600 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/20">
-            <Activity className="h-6 w-6 text-white" />
+          <div className="h-9 w-9 rounded border border-[#393C33] bg-[#242720] flex items-center justify-center text-[#A18B62]">
+            <Landmark className="h-4 w-4" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="text-lg font-bold tracking-tight text-white">
-                SHORT INTEREST INTELLIGENCE
+              <h1 className="text-sm font-semibold tracking-wider text-[#E8E4D9] uppercase font-mono">
+                Short Interest Intelligence
               </h1>
-              <span className="text-[10px] font-semibold uppercase px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                Phase 2
+              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded border border-[#393C33] bg-[#242720] text-[#A18B62]">
+                PHASE 2
               </span>
             </div>
-            <p className="text-xs text-slate-400">
-              News-Driven FINRA Short-Interest Trend Prediction with Large Language Models
+            <p className="text-[11px] text-[#85877C]">
+              Institutional Market Catalyst & FINRA Settlement Prediction Terminal
             </p>
           </div>
         </div>
 
-        {/* Status Badges & Notification Center */}
+        {/* Status Ledgers & Notification Center */}
         <div className="flex items-center flex-wrap gap-2 text-xs">
-          {/* Backend Status */}
-          <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full border ${
-            isHealthy 
-              ? 'bg-emerald-950/40 border-emerald-500/30 text-emerald-300' 
-              : 'bg-rose-950/40 border-rose-500/30 text-rose-300'
-          }`}>
-            <span className={`h-2 w-2 rounded-full ${isHealthy ? 'bg-emerald-400 animate-pulse' : 'bg-rose-500'}`} />
-            <span className="font-medium">
-              Backend: {isHealthy ? 'Online (Port 8000)' : 'Connecting...'}
+          {/* Backend Connection */}
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded border border-[#393C33] bg-[#1D201B]">
+            <span className={`h-1.5 w-1.5 rounded-full ${isHealthy ? 'bg-[#829477]' : 'bg-[#B66F58]'}`} />
+            <span className="text-[11px] text-[#AAA99D] font-mono">
+              API: {isHealthy ? 'ONLINE' : 'CONNECTING'}
             </span>
           </div>
 
-          {/* LR Baseline Badge */}
-          <div className="flex items-center gap-1 px-2.5 py-1 rounded-md bg-slate-800/60 border border-slate-700/60 text-slate-300">
-            <Cpu className="h-3.5 w-3.5 text-blue-400" />
-            <span>LR: <strong className="text-white">{models.logistic_regression === 'ready' ? 'Ready (30k feat)' : 'Offline'}</strong></span>
+          {/* LR Model Status */}
+          <div className="px-2.5 py-1 rounded border border-[#393C33] bg-[#1D201B] text-[11px] font-mono">
+            <span className="text-[#85877C] mr-1">LR:</span>
+            <span className="text-[#E8E4D9]">
+              {models.logistic_regression === 'ready' ? 'READY (30k TF-IDF)' : 'OFFLINE'}
+            </span>
           </div>
 
-          {/* XGBoost Badge */}
-          <div className="flex items-center gap-1 px-2.5 py-1 rounded-md bg-slate-800/60 border border-slate-700/60 text-slate-300">
-            <ShieldCheck className="h-3.5 w-3.5 text-indigo-400" />
-            <span>XGBoost: <strong className="text-white">{models.xgboost === 'ready' ? 'Ready' : 'Offline'}</strong></span>
+          {/* XGBoost Status */}
+          <div className="px-2.5 py-1 rounded border border-[#393C33] bg-[#1D201B] text-[11px] font-mono">
+            <span className="text-[#85877C] mr-1">XGB:</span>
+            <span className="text-[#E8E4D9]">
+              {models.xgboost === 'ready' ? 'READY (TREES)' : 'OFFLINE'}
+            </span>
           </div>
 
-          {/* Gemini Badge */}
-          <div className={`flex items-center gap-1 px-2.5 py-1 rounded-md border ${
-            backendHealth?.environment?.gemini_configured
-              ? 'bg-cyan-950/30 border-cyan-500/30 text-cyan-300'
-              : 'bg-slate-800/40 border-slate-700/50 text-slate-400'
-          }`}>
-            <Sparkles className="h-3.5 w-3.5 text-cyan-400" />
-            <span>Gemini: {backendHealth?.environment?.gemini_configured ? 'Active' : 'Heuristic Fallback'}</span>
+          {/* Gemini Mode */}
+          <div className="px-2.5 py-1 rounded border border-[#393C33] bg-[#1D201B] text-[11px] font-mono">
+            <span className="text-[#85877C] mr-1">ENRICHMENT:</span>
+            <span className={backendHealth?.environment?.gemini_configured ? 'text-[#A18B62]' : 'text-[#85877C]'}>
+              {backendHealth?.environment?.gemini_configured ? 'GEMINI' : 'HEURISTIC'}
+            </span>
           </div>
 
           {/* Persistent Investor Notification Bell */}
           <div className="relative ml-1" ref={dropdownRef}>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="relative p-2 rounded-lg bg-slate-800/80 hover:bg-slate-700/90 text-slate-300 hover:text-white border border-slate-700/80 transition-colors flex items-center justify-center"
+              className="relative p-1.5 rounded border border-[#393C33] bg-[#242720] hover:bg-[#2B2E27] text-[#AAA99D] hover:text-[#E8E4D9] transition-colors"
               title="Investor Alerts & Notifications"
             >
               <Bell className="h-4 w-4" />
               {unreadCount > 0 && (
-                <span className="absolute -top-1 -right-1 h-4 min-w-[16px] px-1 bg-red-500 text-white font-bold text-[9px] rounded-full flex items-center justify-center ring-2 ring-slate-900 animate-pulse">
+                <span className="absolute -top-1 -right-1 h-3.5 min-w-[14px] px-1 bg-[#B66F58] text-[#E8E4D9] font-bold text-[9px] rounded-full flex items-center justify-center">
                   {unreadCount > 9 ? '9+' : unreadCount}
                 </span>
               )}
             </button>
 
-            {/* Notification Popover Drawer */}
+            {/* Notification Drawer */}
             {isOpen && (
-              <div className="absolute right-0 mt-2 w-80 sm:w-96 bg-slate-900 border border-slate-700/90 rounded-xl shadow-2xl z-50 overflow-hidden animate-fadeIn">
+              <div className="absolute right-0 mt-2 w-80 sm:w-96 bg-[#242720] border border-[#393C33] rounded shadow-2xl z-50 overflow-hidden animate-fade-in">
                 {/* Header */}
-                <div className="p-3 bg-slate-950/90 border-b border-slate-800 flex items-center justify-between">
+                <div className="p-3 bg-[#1D201B] border-b border-[#393C33] flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <Bell className="h-4 w-4 text-amber-400" />
-                    <span className="font-bold text-white text-xs">Investor Notifications</span>
+                    <span className="font-mono text-xs font-semibold text-[#E8E4D9] uppercase tracking-wide">
+                      Investor Notifications
+                    </span>
                     {unreadCount > 0 && (
-                      <span className="text-[10px] bg-red-500/20 text-red-300 px-1.5 py-0.2 rounded border border-red-500/30 font-semibold">
-                        {unreadCount} unread
+                      <span className="text-[10px] font-mono bg-[#B66F58]/20 text-[#B66F58] px-1.5 py-0.2 rounded border border-[#B66F58]/40">
+                        {unreadCount} UNREAD
                       </span>
                     )}
                   </div>
-                  <div className="flex items-center gap-1">
+                  <div className="flex items-center gap-2">
                     {unreadCount > 0 && (
                       <button
                         onClick={() => handleMarkAsRead(null)}
-                        className="text-[10px] text-blue-400 hover:text-blue-300 flex items-center gap-0.5 px-1.5 py-0.5 rounded hover:bg-slate-800"
-                        title="Mark all as read"
+                        className="text-[10px] text-[#A18B62] hover:text-[#B29B70] flex items-center gap-1 font-mono"
                       >
                         <Check className="h-3 w-3" />
-                        Mark all read
+                        MARK ALL READ
                       </button>
                     )}
                     <button
                       onClick={() => setIsOpen(false)}
-                      className="text-slate-400 hover:text-white p-1 rounded hover:bg-slate-800"
+                      className="text-[#85877C] hover:text-[#E8E4D9] p-0.5"
                     >
                       <X className="h-3.5 w-3.5" />
                     </button>
@@ -211,10 +204,10 @@ export default function Header({ backendHealth, isCheckingHealth, onSelectNotifi
                 </div>
 
                 {/* Notifications List */}
-                <div className="max-h-80 overflow-y-auto divide-y divide-slate-800/60">
+                <div className="max-h-80 overflow-y-auto divide-y divide-[#393C33]">
                   {notifications.length === 0 ? (
-                    <div className="py-8 text-center text-xs text-slate-500">
-                      No investor notifications yet.
+                    <div className="py-8 text-center text-xs text-[#85877C]">
+                      No active investor alerts.
                     </div>
                   ) : (
                     notifications.map((notif) => {
@@ -227,35 +220,35 @@ export default function Header({ backendHealth, isCheckingHealth, onSelectNotifi
                           onClick={() => handleNotificationClick(notif)}
                           className={`p-3 transition-colors cursor-pointer flex items-start gap-2.5 ${
                             !notif.is_read
-                              ? 'bg-slate-800/40 hover:bg-slate-800/70'
-                              : 'hover:bg-slate-950/60'
+                              ? 'bg-[#2B2E27]/80 hover:bg-[#2B2E27]'
+                              : 'hover:bg-[#1D201B]'
                           }`}
                         >
                           <div className="mt-0.5 shrink-0">
                             {isSignificant ? (
-                              <ShieldAlert className="h-4 w-4 text-red-400" />
+                              <span className="h-2 w-2 rounded-full bg-[#B66F58] inline-block" />
                             ) : isReview ? (
-                              <AlertCircle className="h-4 w-4 text-amber-400" />
+                              <span className="h-2 w-2 rounded-full bg-[#C49A58] inline-block" />
                             ) : (
-                              <Activity className="h-4 w-4 text-blue-400" />
+                              <span className="h-2 w-2 rounded-full bg-[#829477] inline-block" />
                             )}
                           </div>
 
                           <div className="flex-1 min-w-0">
-                            <div className="flex items-center justify-between gap-1 mb-0.5">
-                              <span className="font-semibold text-xs text-white truncate">
+                            <div className="flex items-center justify-between gap-1 mb-1">
+                              <span className="font-medium text-xs text-[#E8E4D9] truncate">
                                 {notif.title}
                               </span>
                               {!notif.is_read && (
-                                <span className="h-1.5 w-1.5 rounded-full bg-blue-400 shrink-0" />
+                                <span className="h-1.5 w-1.5 rounded-full bg-[#A18B62] shrink-0" />
                               )}
                             </div>
-                            <p className="text-[11px] text-slate-400 line-clamp-2 leading-relaxed">
+                            <p className="text-[11px] text-[#AAA99D] line-clamp-2 leading-relaxed">
                               {notif.message}
                             </p>
-                            <div className="flex items-center gap-2 mt-1.5 text-[10px] text-slate-500">
+                            <div className="flex items-center gap-2 mt-1.5 text-[10px] text-[#85877C] font-mono">
                               {notif.ticker && (
-                                <span className="font-mono font-bold text-blue-400">
+                                <span className="text-[#A18B62]">
                                   ${notif.ticker}
                                 </span>
                               )}
@@ -278,14 +271,14 @@ export default function Header({ backendHealth, isCheckingHealth, onSelectNotifi
 
                 {/* Footer */}
                 {notifications.length > 0 && (
-                  <div className="p-2 bg-slate-950/80 border-t border-slate-800 flex items-center justify-between text-[10px] text-slate-500">
-                    <span>Persistent SQLite Store</span>
+                  <div className="p-2.5 bg-[#1D201B] border-t border-[#393C33] flex items-center justify-between text-[10px] text-[#85877C] font-mono">
+                    <span>PERSISTENT SQLITE REPOSITORY</span>
                     <button
                       onClick={handleClearAll}
-                      className="text-slate-400 hover:text-red-400 flex items-center gap-1 transition-colors"
+                      className="text-[#85877C] hover:text-[#B66F58] flex items-center gap-1 transition-colors"
                     >
                       <Trash2 className="h-3 w-3" />
-                      Clear all
+                      CLEAR ALL
                     </button>
                   </div>
                 )}

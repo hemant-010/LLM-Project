@@ -1,20 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  ShieldAlert, 
   Bell, 
-  Users, 
-  Clock, 
   ArrowRight, 
   ExternalLink, 
   ChevronDown, 
   ChevronUp, 
-  TrendingDown, 
-  CheckCircle2, 
-  AlertTriangle, 
   Search, 
   FileText,
-  Sparkles,
-  RefreshCw
+  RefreshCw,
+  Sparkles
 } from 'lucide-react';
 
 const API_BASE = import.meta.env.VITE_API_BASE || '';
@@ -115,56 +109,65 @@ export default function InsiderSellingCard({ onEvaluateTransaction }) {
   const displayedList = activeTab === 'screener' ? transactions : alerts;
 
   return (
-    <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-5 shadow-lg space-y-4">
+    <div className="bg-[#242720] border border-[#393C33] rounded p-6 shadow-sm space-y-5">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-800 gap-2">
-        <div className="flex items-center gap-2">
-          <ShieldAlert className="h-5 w-5 text-amber-400" />
-          <h3 className="text-base font-bold text-white tracking-wide">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-[#393C33] gap-3">
+        <div>
+          <div className="flex items-center gap-2">
+            <span className="text-[11px] font-mono text-[#A18B62] uppercase tracking-wider">
+              REGULATORY SURVEILLANCE
+            </span>
+            <span className="text-[10px] font-mono px-1.5 py-0.2 rounded border border-[#393C33] bg-[#1D201B] text-[#829477]">
+              EDGAR XML ACTIVE
+            </span>
+          </div>
+          <h3 className="text-base font-semibold text-[#E8E4D9] mt-0.5 font-mono">
             Executive Insider Selling & SEC Form 4 Intelligence
           </h3>
-          <span className="text-[10px] font-semibold uppercase px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-            Active Module
-          </span>
+          <p className="text-xs text-[#85877C] mt-0.5">
+            Automated screening of officer share dispositions, Rule 10b5-1 pre-scheduled plans, and liquidation forensics.
+          </p>
         </div>
-        <div className="flex items-center gap-2">
+
+        {/* Tab Toggle */}
+        <div className="flex items-center gap-1.5 p-1 bg-[#1D201B] border border-[#393C33] rounded self-start sm:self-center">
           <button
             onClick={() => setActiveTab('screener')}
-            className={`px-3 py-1 text-xs font-medium rounded-lg transition-colors ${
+            className={`px-3 py-1 text-xs font-mono rounded transition-colors ${
               activeTab === 'screener'
-                ? 'bg-blue-600 text-white shadow-sm'
-                : 'text-slate-400 hover:text-slate-200 bg-slate-800/60'
+                ? 'bg-[#2B2E27] text-[#E8E4D9] border border-[#393C33]'
+                : 'text-[#85877C] hover:text-[#AAA99D]'
             }`}
           >
-            Ticker Screener
+            TICKER SCREENER
           </button>
           <button
             onClick={() => setActiveTab('alerts')}
-            className={`px-3 py-1 text-xs font-medium rounded-lg flex items-center gap-1.5 transition-colors ${
+            className={`px-3 py-1 text-xs font-mono rounded flex items-center gap-1.5 transition-colors ${
               activeTab === 'alerts'
-                ? 'bg-amber-600 text-white shadow-sm'
-                : 'text-slate-400 hover:text-slate-200 bg-slate-800/60'
+                ? 'bg-[#2B2E27] text-[#A18B62] border border-[#393C33]'
+                : 'text-[#85877C] hover:text-[#AAA99D]'
             }`}
           >
             <Bell className="h-3 w-3" />
-            Alert Feed ({alerts.length})
+            ALERT FEED ({alerts.length})
           </button>
         </div>
       </div>
 
       {/* Subheader info & Ticker Navigation */}
       {activeTab === 'screener' && (
-        <div className="flex flex-wrap items-center justify-between gap-3 bg-slate-950/60 p-3 rounded-lg border border-slate-800/80">
+        <div className="flex flex-wrap items-center justify-between gap-3 bg-[#1D201B] p-3 rounded border border-[#393C33]">
           <div className="flex items-center gap-1.5 flex-wrap">
-            <span className="text-xs text-slate-400 font-medium mr-1">Institutional Coverage:</span>
+            <span className="text-xs text-[#85877C] font-mono mr-1">COVERAGE:</span>
             {COVERAGE_TICKERS.map((sym) => (
               <button
                 key={sym}
                 onClick={() => handleTickerSelect(sym)}
                 className={`px-2.5 py-1 text-xs font-mono rounded transition-colors ${
                   selectedTicker === sym
-                    ? 'bg-blue-500 text-white font-bold shadow-sm'
-                    : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+                    ? 'bg-[#A18B62] text-[#171916] font-bold'
+                    : 'bg-[#242720] text-[#AAA99D] hover:text-[#E8E4D9] border border-[#393C33]'
                 }`}
               >
                 ${sym}
@@ -175,17 +178,17 @@ export default function InsiderSellingCard({ onEvaluateTransaction }) {
           <form onSubmit={handleCustomSubmit} className="flex items-center gap-1.5">
             <input
               type="text"
-              placeholder="Look up ticker..."
+              placeholder="LOOKUP TICKER..."
               value={customTicker}
               onChange={(e) => setCustomTicker(e.target.value)}
-              className="px-2.5 py-1 text-xs bg-slate-900 border border-slate-700 rounded text-slate-200 uppercase font-mono w-28 focus:outline-none focus:border-blue-500"
+              className="px-2.5 py-1 text-xs bg-[#242720] border border-[#393C33] rounded text-[#E8E4D9] uppercase font-mono w-32 focus:outline-none focus:border-[#A18B62]"
             />
             <button
               type="submit"
-              className="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 rounded flex items-center gap-1"
+              className="px-2.5 py-1 text-xs bg-[#2B2E27] text-[#AAA99D] hover:text-[#E8E4D9] border border-[#393C33] rounded flex items-center gap-1 font-mono"
             >
               <Search className="h-3 w-3" />
-              Scan
+              SCAN
             </button>
           </form>
         </div>
@@ -193,23 +196,22 @@ export default function InsiderSellingCard({ onEvaluateTransaction }) {
 
       {/* Loading & Error States */}
       {isLoading && (
-        <div className="py-8 flex flex-col items-center justify-center text-slate-400 text-xs">
-          <RefreshCw className="h-5 w-5 animate-spin text-blue-400 mb-2" />
-          Fetching verified SEC Form 4 filings...
+        <div className="py-8 flex flex-col items-center justify-center text-[#85877C] text-xs font-mono">
+          <RefreshCw className="h-4 w-4 animate-spin text-[#A18B62] mb-2" />
+          PARSING SEC EDGAR XML OWNERSHIP SUBMISSIONS...
         </div>
       )}
 
       {error && (
-        <div className="p-3 bg-red-950/40 border border-red-800/60 rounded-lg text-xs text-red-300 flex items-center gap-2">
-          <AlertTriangle className="h-4 w-4 text-red-400 shrink-0" />
+        <div className="p-3 bg-[#B66F58]/10 border border-[#B66F58]/40 rounded text-xs text-[#B66F58] flex items-center gap-2 font-mono">
           <span>{error}</span>
         </div>
       )}
 
       {/* Filings / Alerts List */}
       {!isLoading && !error && displayedList.length === 0 && (
-        <div className="py-6 text-center text-slate-500 text-xs bg-slate-950/40 rounded-lg border border-slate-800/60">
-          No significant insider transactions found matching criteria.
+        <div className="py-6 text-center text-[#85877C] text-xs font-mono bg-[#1D201B] rounded border border-[#393C33]">
+          NO SIGNIFICANT INSIDER DISPOSITIONS FOUND MATCHING CRITERIA.
         </div>
       )}
 
@@ -223,93 +225,95 @@ export default function InsiderSellingCard({ onEvaluateTransaction }) {
             return (
               <div
                 key={idx}
-                className={`rounded-lg border transition-all ${
+                className={`rounded border transition-colors ${
                   isSignificant
-                    ? 'bg-red-950/20 border-red-800/60 shadow-sm'
+                    ? 'bg-[#1D201B] border-[#B66F58]/50'
                     : isReview
-                    ? 'bg-amber-950/20 border-amber-800/50'
-                    : 'bg-slate-950/60 border-slate-800/80 hover:border-slate-700'
+                    ? 'bg-[#1D201B] border-[#C49A58]/40'
+                    : 'bg-[#1D201B] border-[#393C33]'
                 }`}
               >
-                <div className="p-3.5">
+                <div className="p-4">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                     {/* Insider info */}
-                    <div className="flex items-start gap-2.5">
-                      <div className="mt-0.5">
-                        {isSignificant ? (
-                          <ShieldAlert className="h-4 w-4 text-red-400 shrink-0" />
-                        ) : isReview ? (
-                          <AlertTriangle className="h-4 w-4 text-amber-400 shrink-0" />
-                        ) : (
-                          <CheckCircle2 className="h-4 w-4 text-slate-400 shrink-0" />
-                        )}
+                    <div className="flex items-start gap-3">
+                      <div className="mt-1">
+                        <span className={`h-2.5 w-2.5 rounded-full inline-block ${
+                          isSignificant ? 'bg-[#B66F58]' : isReview ? 'bg-[#C49A58]' : 'bg-[#829477]'
+                        }`} />
                       </div>
                       <div>
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className="font-bold text-white text-sm">{tx.insider_name}</span>
-                          <span className="text-xs text-slate-400">({tx.insider_role})</span>
+                          <span className="font-semibold text-[#E8E4D9] text-sm">{tx.insider_name}</span>
+                          <span className="text-xs text-[#85877C]">({tx.insider_role})</span>
                           {tx.is_c_suite && (
-                            <span className="text-[10px] font-semibold uppercase px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30">
-                              C-Suite Officer
+                            <span className="text-[10px] font-mono px-1.5 py-0.2 rounded border border-[#A18B62]/40 bg-[#A18B62]/10 text-[#A18B62]">
+                              C-SUITE
                             </span>
                           )}
-                          <span className="font-mono text-xs font-semibold text-blue-400">${tx.ticker}</span>
+                          <span className="font-mono text-xs font-bold text-[#A18B62]">${tx.ticker}</span>
                         </div>
-                        <div className="flex items-center gap-3 text-[11px] text-slate-500 mt-1">
-                          <span>Filing: {tx.filing_date || 'N/A'}</span>
+                        <div className="flex items-center gap-3 text-[11px] text-[#85877C] font-mono mt-1">
+                          <span>FILING: {tx.filing_date || 'N/A'}</span>
                           <span>&bull;</span>
-                          <span>Tx: {tx.transaction_date || 'N/A'}</span>
+                          <span>TX: {tx.transaction_date || 'N/A'}</span>
+                          {tx.data_source && (
+                            <>
+                              <span>&bull;</span>
+                              <span className="text-[#AAA99D] uppercase">SOURCE: {tx.data_source.replace(/_/g, ' ')}</span>
+                            </>
+                          )}
                         </div>
                       </div>
                     </div>
 
                     {/* Key Metrics & Significance Pill */}
                     <div className="flex items-center gap-3 self-end sm:self-center">
-                      <div className="text-right">
-                        <div className="text-xs font-semibold text-white">
-                          {tx.shares_sold?.toLocaleString()} shares
+                      <div className="text-right font-mono">
+                        <div className="text-xs font-semibold text-[#E8E4D9]">
+                          {tx.shares_sold?.toLocaleString()} SHARES
                         </div>
-                        <div className="text-[11px] font-mono text-emerald-400">
+                        <div className="text-[11px] text-[#A18B62]">
                           {formatCurrency(tx.estimated_value)}
                         </div>
                       </div>
 
-                      <div className="flex flex-col items-end gap-1">
+                      <div className="flex flex-col items-end gap-1 font-mono">
                         <span
                           className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded border ${
                             isSignificant
-                              ? 'bg-red-500/20 text-red-300 border-red-500/40'
+                              ? 'bg-[#B66F58]/20 text-[#B66F58] border-[#B66F58]/50'
                               : isReview
-                              ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-                              : 'bg-slate-800 text-slate-400 border-slate-700'
+                              ? 'bg-[#C49A58]/20 text-[#C49A58] border-[#C49A58]/50'
+                              : 'bg-[#2B2E27] text-[#85877C] border-[#393C33]'
                           }`}
                         >
                           {tx.significance_category === 'significant'
-                            ? 'Significant'
+                            ? 'SIGNIFICANT'
                             : tx.significance_category === 'requires_review'
-                            ? 'Requires Review'
-                            : 'Routine'}
+                            ? 'REQUIRES REVIEW'
+                            : 'ROUTINE'}
                         </span>
                         
                         {/* 10b5-1 Indicator Badge */}
                         <span
-                          className={`text-[9px] font-medium px-1.5 py-0.5 rounded ${
+                          className={`text-[9px] px-1.5 py-0.2 rounded border ${
                             tx.is_10b5_1
-                              ? 'bg-slate-800 text-slate-300 border border-slate-700'
-                              : 'bg-rose-950/60 text-rose-300 border border-rose-800/40'
+                              ? 'bg-[#242720] text-[#829477] border-[#829477]/40'
+                              : 'bg-[#242720] text-[#B66F58] border-[#B66F58]/40'
                           }`}
                         >
-                          {tx.is_10b5_1 ? 'Rule 10b5-1 Plan' : 'Discretionary'}
+                          {tx.is_10b5_1 ? 'RULE 10B5-1' : 'DISCRETIONARY'}
                         </span>
                       </div>
                     </div>
                   </div>
 
                   {/* Quantitative Holdings & Risk Bar */}
-                  <div className="mt-3 pt-2.5 border-t border-slate-800/60 grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+                  <div className="mt-3 pt-3 border-t border-[#393C33] grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
                     <div>
-                      <span className="text-slate-500 text-[10px] block">Holding Disposed</span>
-                      <span className="font-mono font-semibold text-slate-200">
+                      <span className="text-[#85877C] text-[10px] block">HOLDING DISPOSED</span>
+                      <span className="font-semibold text-[#E8E4D9]">
                         {tx.percentage_holdings_sold != null
                           ? `${tx.percentage_holdings_sold.toFixed(1)}%`
                           : 'Not reported'}
@@ -317,8 +321,8 @@ export default function InsiderSellingCard({ onEvaluateTransaction }) {
                     </div>
 
                     <div>
-                      <span className="text-slate-500 text-[10px] block">Remaining Shares</span>
-                      <span className="font-mono text-slate-300">
+                      <span className="text-[#85877C] text-[10px] block">REMAINING SHARES</span>
+                      <span className="text-[#AAA99D]">
                         {tx.shares_owned_after != null
                           ? tx.shares_owned_after.toLocaleString()
                           : 'N/A'}
@@ -326,28 +330,28 @@ export default function InsiderSellingCard({ onEvaluateTransaction }) {
                     </div>
 
                     <div>
-                      <span className="text-slate-500 text-[10px] block">Execution Price</span>
-                      <span className="font-mono text-slate-300">
+                      <span className="text-[#85877C] text-[10px] block">EXECUTION PRICE</span>
+                      <span className="text-[#AAA99D]">
                         {tx.price_per_share ? `$${tx.price_per_share.toFixed(2)}` : 'N/A'}
                       </span>
                     </div>
 
                     <div>
-                      <span className="text-slate-500 text-[10px] block">Risk Score</span>
+                      <span className="text-[#85877C] text-[10px] block">RISK SCORE</span>
                       <div className="flex items-center gap-1.5">
-                        <div className="flex-1 bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                        <div className="flex-1 bg-[#242720] border border-[#393C33] rounded h-1.5 overflow-hidden">
                           <div
                             className={`h-full ${
                               tx.risk_score >= 0.7
-                                ? 'bg-red-500'
+                                ? 'bg-[#B66F58]'
                                 : tx.risk_score >= 0.4
-                                ? 'bg-amber-500'
-                                : 'bg-blue-500'
+                                ? 'bg-[#C49A58]'
+                                : 'bg-[#A18B62]'
                             }`}
                             style={{ width: `${Math.min(100, (tx.risk_score || 0) * 100)}%` }}
                           />
                         </div>
-                        <span className="font-mono text-[10px] text-slate-400">
+                        <span className="text-[10px] text-[#AAA99D]">
                           {tx.risk_score?.toFixed(2) || '0.00'}
                         </span>
                       </div>
@@ -355,22 +359,22 @@ export default function InsiderSellingCard({ onEvaluateTransaction }) {
                   </div>
 
                   {/* Quick Action & Forensics Drawer Toggle */}
-                  <div className="mt-3 flex items-center justify-between pt-2 border-t border-slate-800/60">
+                  <div className="mt-3 flex items-center justify-between pt-2 border-t border-[#393C33]">
                     <button
                       onClick={() => toggleExpand(idx)}
-                      className="text-xs text-slate-400 hover:text-white flex items-center gap-1 transition-colors"
+                      className="text-xs font-mono text-[#85877C] hover:text-[#E8E4D9] flex items-center gap-1 transition-colors"
                     >
                       {isExpanded ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />}
-                      <span>{isExpanded ? 'Hide Forensics & EDGAR Link' : 'View Risk Breakdown & EDGAR Link'}</span>
+                      <span>{isExpanded ? 'HIDE FORENSICS & EDGAR LINK' : 'VIEW RISK BREAKDOWN & EDGAR LINK'}</span>
                     </button>
 
                     {onEvaluateTransaction && (
                       <button
                         onClick={() => handleForecastClick(tx)}
-                        className="px-2.5 py-1 text-xs font-semibold bg-blue-600/90 hover:bg-blue-500 text-white rounded flex items-center gap-1.5 shadow-sm transition-all"
+                        className="px-2.5 py-1 text-xs font-mono font-medium rounded border border-[#A18B62] bg-[#A18B62]/10 hover:bg-[#A18B62] text-[#A18B62] hover:text-[#171916] flex items-center gap-1.5 transition-colors"
                       >
                         <Sparkles className="h-3 w-3" />
-                        Forecast Short Impact
+                        FORECAST SHORT IMPACT
                         <ArrowRight className="h-3 w-3" />
                       </button>
                     )}
@@ -378,62 +382,64 @@ export default function InsiderSellingCard({ onEvaluateTransaction }) {
 
                   {/* Expanded Forensic Analysis Drawer */}
                   {isExpanded && (
-                    <div className="mt-3 p-3 bg-slate-950/80 rounded border border-slate-800 text-xs space-y-2.5 animate-fadeIn">
+                    <div className="mt-3 p-3 bg-[#242720] rounded border border-[#393C33] text-xs space-y-2.5 animate-fade-in">
                       <div>
-                        <span className="text-slate-400 font-semibold block mb-1">Analytical Takeaway:</span>
-                        <p className="text-slate-300 italic">{tx.investor_takeaway}</p>
+                        <span className="text-[#85877C] font-mono text-[10px] uppercase block mb-1">
+                          ANALYTICAL TAKEAWAY
+                        </span>
+                        <p className="text-[#E8E4D9] italic leading-relaxed">{tx.investor_takeaway}</p>
                       </div>
 
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 border-t border-slate-800/80">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-[#393C33]">
                         {/* Risk Factors */}
                         <div>
-                          <span className="text-red-400 font-semibold text-[11px] block mb-1">
-                            Elevated Risk Factors:
+                          <span className="text-[#B66F58] font-mono text-[10px] uppercase block mb-1">
+                            ELEVATED RISK FACTORS
                           </span>
                           {tx.risk_factors && tx.risk_factors.length > 0 ? (
-                            <ul className="list-disc list-inside space-y-0.5 text-slate-400 text-[11px]">
+                            <ul className="list-disc list-inside space-y-0.5 text-[#AAA99D] text-[11px]">
                               {tx.risk_factors.map((rf, rIdx) => (
                                 <li key={rIdx}>{rf}</li>
                               ))}
                             </ul>
                           ) : (
-                            <span className="text-slate-500 text-[11px]">No high-risk factors identified.</span>
+                            <span className="text-[#85877C] text-[11px] font-mono">No elevated risk factors detected.</span>
                           )}
                         </div>
 
                         {/* Mitigating Factors */}
                         <div>
-                          <span className="text-emerald-400 font-semibold text-[11px] block mb-1">
-                            Mitigating Factors:
+                          <span className="text-[#829477] font-mono text-[10px] uppercase block mb-1">
+                            MITIGATING FACTORS
                           </span>
                           {tx.mitigating_factors && tx.mitigating_factors.length > 0 ? (
-                            <ul className="list-disc list-inside space-y-0.5 text-slate-400 text-[11px]">
+                            <ul className="list-disc list-inside space-y-0.5 text-[#AAA99D] text-[11px]">
                               {tx.mitigating_factors.map((mf, mIdx) => (
                                 <li key={mIdx}>{mf}</li>
                               ))}
                             </ul>
                           ) : (
-                            <span className="text-slate-500 text-[11px]">No mitigating factors detected.</span>
+                            <span className="text-[#85877C] text-[11px] font-mono">No mitigating factors detected.</span>
                           )}
                         </div>
                       </div>
 
                       {/* SEC EDGAR Filing Link */}
-                      <div className="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[11px]">
-                        <span className="text-slate-500">Source: Official SEC EDGAR Database (Form 4)</span>
+                      <div className="pt-2 border-t border-[#393C33] flex items-center justify-between text-[11px] font-mono">
+                        <span className="text-[#85877C]">SOURCE: OFFICIAL SEC EDGAR REPOSITORY</span>
                         {tx.filing_url ? (
                           <a
                             href={tx.filing_url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 hover:text-blue-300 flex items-center gap-1 font-mono"
+                            className="text-[#A18B62] hover:text-[#B29B70] flex items-center gap-1"
                           >
                             <FileText className="h-3 w-3" />
-                            View SEC EDGAR Filing
+                            VIEW SEC FORM 4 FILING
                             <ExternalLink className="h-2.5 w-2.5" />
                           </a>
                         ) : (
-                          <span className="text-slate-600 font-mono">EDGAR URL Unavailable</span>
+                          <span className="text-[#85877C]">EDGAR URL UNAVAILABLE</span>
                         )}
                       </div>
                     </div>
@@ -446,11 +452,11 @@ export default function InsiderSellingCard({ onEvaluateTransaction }) {
       )}
 
       {/* Institutional Disclaimer */}
-      <div className="p-2.5 rounded-lg bg-slate-950/40 border border-slate-800/60 text-[11px] text-slate-500 leading-relaxed">
-        <span className="font-semibold text-slate-400">Institutional Disclaimer:</span> Form 4 insider transactions are 
-        retrieved from public SEC EDGAR records. Dispositions routinely occur for pre-scheduled portfolio diversification, 
+      <div className="p-3 rounded bg-[#1D201B] border border-[#393C33] text-[11px] text-[#85877C] leading-relaxed font-mono">
+        <strong className="text-[#AAA99D]">INSTITUTIONAL DISCLAIMER:</strong> Form 4 insider transactions are retrieved 
+        from public SEC EDGAR records. Dispositions occur routinely for pre-scheduled portfolio diversification, 
         Rule 10b5-1 tax withholding, and option expiration. These evaluations serve as quantitative research signals 
-        and do not constitute automated trading instructions or financial advice.
+        and do not constitute automated trading instructions or investment advice.
       </div>
     </div>
   );

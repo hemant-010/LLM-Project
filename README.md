@@ -142,3 +142,4 @@ Expected result:
 
 - **Frontend:** Pre-configured for **Vercel** via `frontend/vercel.json`. Set `VITE_API_BASE` in Vercel project environment variables.
 - **Backend:** Pre-configured for **Render** via `PHASE 2/render.yaml` (with persistent disk mount for SQLite) or **Railway** via `PHASE 2/Dockerfile`.
+

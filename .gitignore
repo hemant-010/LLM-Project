@@ -74,3 +74,4 @@ PHASE 2/models/artifacts/*
 !PHASE 2/models/artifacts/*.joblib
 !PHASE 2/models/artifacts/*.json
 !PHASE 2/models/artifacts/*.md
+

@@ -1,23 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --color-noir-main: #171916;
+  --color-noir-secondary: #1D201B;
+  --color-noir-card: #242720;
+  --color-noir-surface: #2B2E27;
+  --color-noir-border: #393C33;
+  --color-noir-border-light: #4A4E43;
+  --color-noir-text-primary: #E8E4D9;
+  --color-noir-text-secondary: #AAA99D;
+  --color-noir-text-muted: #85877C;
+  --color-noir-accent: #A18B62;
+  --color-noir-accent-hover: #B29B70;
+  --color-noir-accent-muted: #64563B;
+  --color-noir-positive: #829477;
+  --color-noir-negative: #B66F58;
+  --color-noir-warning: #C49A58;
+}
+
 :root {
-  --bg-primary: #090d16;
-  --bg-secondary: #0f172a;
-  --bg-card: #131c31;
-  --bg-card-hover: #18243e;
-  --bg-input: #0b1120;
-  --border-color: #1e293b;
-  --border-focus: #3b82f6;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
-  --accent-blue: #3b82f6;
-  --accent-indigo: #6366f1;
-  --color-increase: #ef4444;   /* Red for rising short interest (bearish) */
-  --color-decrease: #10b981;   /* Green for falling short interest (covering/bullish) */
-  --color-neutral: #64748b;    /* Slate for neutral */
-  --color-warning: #f59e0b;
+  --bg-main: #171916;
+  --bg-secondary: #1D201B;
+  --bg-card: #242720;
+  --bg-surface: #2B2E27;
+  --border-noir: #393C33;
+  --border-noir-focus: #A18B62;
+  --text-primary: #E8E4D9;
+  --text-secondary: #AAA99D;
+  --text-muted: #85877C;
+  --accent-copper: #A18B62;
+  --accent-olive: #829477;
+  --accent-terracotta: #B66F58;
+  --accent-ochre: #C49A58;
 }
 
 * {
@@ -27,11 +42,17 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: var(--bg-primary);
-  color: var(--text-main);
-  line-height: 1.5;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #171916;
+  color: #E8E4D9;
+  line-height: 1.55;
   min-height: 100vh;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif-heading {
+  font-family: 'Newsreader', Georgia, serif;
 }
 
 code, pre, .font-mono {
@@ -40,48 +61,52 @@ code, pre, .font-mono {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-primary);
+  background: #171916;
 }
 ::-webkit-scrollbar-thumb {
-  background: #334155;
-  border-radius: 3px;
+  background: #393C33;
+  border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: #4A4E43;
 }
 
-/* Animations */
+/* Institutional Card Styling */
+.terminal-card {
+  background-color: #242720;
+  border: 1px solid #393C33;
+  border-radius: 8px;
+}
+
+.terminal-surface {
+  background-color: #2B2E27;
+  border: 1px solid #393C33;
+  border-radius: 6px;
+}
+
+.terminal-input {
+  background-color: #1D201B;
+  border: 1px solid #393C33;
+  color: #E8E4D9;
+  border-radius: 6px;
+  transition: border-color 0.15s ease;
+}
+
+.terminal-input:focus {
+  outline: none;
+  border-color: #A18B62;
+}
+
+/* Subtle fade in */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0; transform: translateY(4px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes pulseGlow {
-  0%, 100% { opacity: 0.9; }
-  50% { opacity: 0.4; }
-}
-
 .animate-fade-in {
-  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-pulse-slow {
-  animation: pulseGlow 2.5s infinite;
-}
-
-/* Utility Layout Classes */
-.container-custom {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem;
-}
-
-@media (min-width: 768px) {
-  .container-custom {
-    padding: 2rem 1.5rem;
-  }
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

@@ -115,7 +115,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 flex flex-col font-sans">
+    <div className="min-h-screen bg-[#171916] text-[#E8E4D9] flex flex-col font-sans">
       {/* Top Navigation */}
       <Header 
         backendHealth={backendHealth} 
@@ -153,15 +153,15 @@ export default function App() {
           onClearHistory={handleClearHistory}
         />
 
-        {/* Reserved Insider-Selling Module */}
+        {/* SEC Form 4 Insider Intelligence Module */}
         <InsiderSellingCard onEvaluateTransaction={handlePredict} />
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-slate-900 bg-slate-950 py-5 text-center text-xs text-slate-500">
+      <footer className="border-t border-[#393C33] bg-[#171916] py-5 text-center text-xs text-[#85877C]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span>Short Interest Trend Prediction &copy; 2026 &bull; Phase 2 Academic Research Platform</span>
-          <span className="font-mono text-[11px] text-slate-600">Models: LogisticRegression (30k TF-IDF) &bull; XGBoost (Trees)</span>
+          <span className="font-mono">Short Interest Trend Prediction &bull; Phase 2 Academic Research Platform</span>
+          <span className="font-mono text-[11px] text-[#85877C]">Models: LogisticRegression (30k TF-IDF) &bull; XGBoost (Trees)</span>
         </div>
       </footer>
     </div>
