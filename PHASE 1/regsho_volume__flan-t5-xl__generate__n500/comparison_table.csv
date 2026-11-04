@@ -1,0 +1,20 @@
+source,model,shots,f1_increase,f1_decrease,f1_avg_reported,f1_weighted_recomputed,f1_weighted,f1_macro,invalid_rate
+paper (reported),Majority,all,0.71,0.0,0.35,0.388,,,
+paper (reported),FLAN-T5 (11B),0,0.03,0.62,0.3,0.297,,,
+paper (reported),FLAN-T5 (11B),1,0.23,0.59,0.4,0.393,,,
+paper (reported),FLAN-T5 (11B),5,0.3,0.6,0.38,0.436,,,
+paper (reported),FLAN-T5 (11B),10,0.31,0.59,0.44,0.437,,,
+paper (reported),LLaMA 2 (7B chat),0,0.17,0.4,0.28,0.274,,,
+paper (reported),LLaMA 2 (7B chat),1,0.06,0.17,0.08,0.11,,,
+paper (reported),LLaMA 2 (7B chat),5,0.0,0.14,0.1,0.063,,,
+paper (reported),LLaMA 2 (7B chat),10,0.0,0.31,0.39,0.14,,,
+paper (reported),FLAN-UL2 (20B),0,0.18,0.61,0.37,0.375,,,
+paper (reported),FLAN-UL2 (20B),1,0.16,0.61,0.36,0.364,,,
+paper (reported),FLAN-UL2 (20B),5,0.34,0.58,0.45,0.449,,,
+paper (reported),FLAN-UL2 (20B),10,0.39,0.56,0.47,0.467,,,
+ours (measured),Majority,all,0.7163,0.0,,,0.3997,0.3582,
+ours (measured),Random (class prior),all,0.5529,0.4772,,,0.5194,0.515,
+ours (measured),google/flan-t5-xl,0,0.3981,0.5423,,,0.4618,0.4702,0.0
+ours (measured),google/flan-t5-xl,1,0.6262,0.3296,,,0.4951,0.4779,0.0
+ours (measured),google/flan-t5-xl,5,0.662,0.1603,,,0.4402,0.4111,0.0
+ours (measured),google/flan-t5-xl,10,0.674,0.1319,,,0.4344,0.4029,0.0

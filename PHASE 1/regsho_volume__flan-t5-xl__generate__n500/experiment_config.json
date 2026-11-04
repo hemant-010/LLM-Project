@@ -1,0 +1,36 @@
+{
+  "paper": "Xiao et al., Short Interest Trend Prediction with Large Language Models, ICIAI 2024, doi:10.1145/3655497.3655500",
+  "label_set": "regsho_volume",
+  "label_definition": "sign(S[t+1]-S[t-1]); S = FINRA Reg SHO daily short-sale volume (TRFs + ADF); paper-faithful, NOT short interest",
+  "dataset_sources": {
+    "news_titles": "Kaggle miguelaenlle/massive-stock-news-analysis-db-for-nlpbacktests, analyst_ratings_processed.csv (Benzinga)",
+    "regsho_volume": "https://cdn.finra.org/equity/regsho/daily/ (FNSQ, FNYX, FNQC, FNRA files)",
+    "short_interest": "https://cdn.finra.org/equity/otcmarket/biweekly/ (consolidated short interest, from 2017-12-29)"
+  },
+  "filters": "ASCII-only titles, 1-50 FLAN-T5 tokens, exact (title, ticker, date) duplicates removed",
+  "n_labeled": 1313978,
+  "n_train": 1051182,
+  "n_test_full": 262796,
+  "n_test_evaluated": 500,
+  "split": "stratified 80/20, random_state=SEED",
+  "seed": 42,
+  "model_name": "google/flan-t5-xl",
+  "load_8bit": false,
+  "scoring": "generate",
+  "shots": [
+    0,
+    1,
+    5,
+    10
+  ],
+  "demo_selection": "random from training split, fixed per test title (seed = SEED*1000003 + index)",
+  "prompt_template": "Read the news title below and determine how the short interest of {company} changes.\n\n{title}\n\nOPTIONS:\n1. increase\n2. decrease\n\nANSWER:",
+  "demo_format": "full template + ' <gold label>', demos joined by blank lines",
+  "decoding": "greedy, max_new_tokens=5, first of increase/decrease/1./2. in output; otherwise invalid (counted wrong)",
+  "max_input_tokens": 2048,
+  "truncation_side": "left",
+  "batch_size": 8,
+  "metrics": "per-class F1, support-weighted F1, macro F1 (sklearn, labels=[increase, decrease])",
+  "transformers_version": "5.18.0",
+  "torch_version": "2.11.0+cu130"
+}

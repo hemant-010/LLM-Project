@@ -1,0 +1,76 @@
+# ========================================================
+# Git Ignore Configuration: Short Interest Trend Prediction
+# ========================================================
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Secrets & Environment variables (NEVER COMMIT SECRETS)
+.env
+*.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+credentials.json
+
+# Python caches & build files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+
+# Frontend dependencies & build artifacts
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+.npm
+.yarn
+
+# Local databases & state files (DO NOT COMMIT)
+*.db
+*.sqlite
+*.sqlite3
+**/notifications.db
+
+# Large processed & raw datasets (>100MB or historical dumps)
+PHASE 2/data/raw/*
+!PHASE 2/data/raw/**/.gitkeep
+PHASE 2/data/processed/*.csv
+PHASE 2/data/processed/*.parquet
+!PHASE 2/data/processed/training_data_schema.csv
+!PHASE 2/data/processed/news_input_template.csv
+!PHASE 2/data/processed/**/.gitkeep
+!PHASE 2/data/processed/*.md
+
+# ========================================================
+# Explicit Whitelists for Production Model Artifacts
+# ========================================================
+!PHASE 2/models/artifacts/
+PHASE 2/models/artifacts/*
+!PHASE 2/models/artifacts/.gitkeep
+!PHASE 2/models/artifacts/production/
+!PHASE 2/models/artifacts/production/*
+!PHASE 2/models/artifacts/*.joblib
+!PHASE 2/models/artifacts/*.json
+!PHASE 2/models/artifacts/*.md

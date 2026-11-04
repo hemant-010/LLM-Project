@@ -1,0 +1,8 @@
+,paper,ours
+# titles,"136,192","1,313,978"
+% increase,54.7%,55.7%
+% decrease,45.3%,44.3%
+avg tokens (train),16.53,20.18
+avg tokens (test),16.48,20.18
+"unique tokens (train, whitespace)","66,624","309,429"
+"unique tokens (test, whitespace)","30,787","144,514"

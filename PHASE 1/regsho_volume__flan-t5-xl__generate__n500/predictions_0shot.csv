@@ -1,0 +1,501 @@
+idx,ticker,news_date,title,gold,pred,raw_output,prompt_tokens
+0,PVH,20180829,PVH Sees Q3 Adj. EPS $3.10-$3.13 vs $3.13 Est.,increase,decrease,2.,59
+1,NERV,20200508,"The Daily Biotech Pulse: Ayala IPO, Pluristem Starts Phase 2 Trial Of COVID Treatment, European Nod For Takeda",increase,decrease,2.,75
+2,AVT,20161004,Raymond James Upgrades Avnet to Strong Buy,increase,increase,1.,47
+3,STX,20120706,"FBN Securities Retains Seagate Technology at Outperform, Lowers PT from $40 to $30",increase,decrease,2.,58
+4,BIIB,20190321,Mid-Morning Market Update: Markets Open Higher; Conagra Earnings Top Expectations,increase,decrease,2.,58
+5,STJ,20130412,St Jude Spikes Higher,increase,increase,1.,37
+6,CLGX,20190129,8 Biggest Price Target Changes For Tuesday,increase,decrease,2.,44
+7,ORCL,20120209,Oracle Analyst: Taleo Purchase Fills Need for Cloud Based Management Portfolio; Will Be Integrated with Fusion Apps,increase,increase,1.,54
+8,QUAD,20140407,S&P Downgrades Quad/Graphics from BB to BB-; Outlook Raised to Stable,increase,decrease,2.,65
+9,GILD,20160208,How To Invest In An Aging World With The 'Live Long & Prosper' ETF,increase,decrease,2.,61
+10,YRCW,20101111,Questions Remain for YRC Worldwide,decrease,increase,1.,46
+11,MAS,20111213,Goldman Sachs Upgrades Masco to Neutral,increase,decrease,2.,43
+12,RECN,20141003,"Stocks To Watch For October 3, 2014",decrease,increase,1.,43
+13,ACC,20110908,Breaking the Trend: Stocks Hitting 52-Week Highs Despite Today's Selloff,increase,decrease,2.,56
+14,CAM,20140818,UPDATE:  Ingersoll Rand To Acquire Cameron's Centrifugal Compression Division for $850M,increase,decrease,2.,58
+15,CTL,20130213,"Earnings Scheduled For February 13, 2013",increase,decrease,2.,43
+16,SYNA,20160414,Synaptics Spikes to High of $89.87 at Open,increase,increase,1.,52
+17,WSH,20141106,Benzinga's Top Upgrades,increase,increase,1.,40
+18,FOSL,20100902,The Current Hottest Stocks,increase,decrease,2.,46
+19,CGEN,20170724,Mid-Morning Market Update: Markets Mostly Lower; Halliburton Profit Tops Estimates,increase,decrease,2.,63
+20,AMTD,20190809,TD Ameritrade Holdings shares are trading lower after Deutsche Bank downgraded the stock from Buy to Hold and lowered its price target from $58 to $47 per share.,decrease,increase,1.,80
+21,FXI,20200306,Hearing Evercore Saying Data From Gilead China On Coronavirus Could Arrive This Month,increase,decrease,2.,59
+22,AMAT,20160817,Applied Materials Shares Rallied 8% During Q2; What's Analyst Sentiment Ahead Of Earnings?,increase,decrease,2.,64
+23,DRC,20111028,"Morgan Stanley Downgrades DRC, FTI, MDR",increase,increase,1.,44
+24,FEIM,20120911,Frequency Electronics Reports Q1 EPS $0.09; Revenues $16.7M,decrease,decrease,2.,57
+25,DSCI,20130812,Derma Sciences Ships First MEDIHONEY over-the-counter Product to Leading U.S. Pharmacy Chain,increase,decrease,2.,57
+26,FISI,20160126,Financial Institutions Reports Q4 EPS $0.44 vs. Est. $0.49,increase,decrease,2.,55
+27,GNC,20170419,GNC Pops to High of $9.57 on Volume,decrease,increase,1.,49
+28,ATRS,20131106,"Antares Pharma, Inc. Reports Q3 EPS of $(0.05) vs $(0.04) Est; Revenue of $5.51M vs $5.86M Est",increase,decrease,2.,79
+29,NFLX,20181031,"Analysts Stay Bullish On iQiyi After Q3 Print, But Investors Unhappy With Lower Ad Revenue",decrease,decrease,2.,62
+30,TSQ,20200529,65 Biggest Movers From Yesterday,decrease,decrease,2.,46
+31,SSB,20191030,"SunTrust Robinson Humphrey Maintains Buy on South State, Raises Price Target to $90",decrease,decrease,2.,55
+32,SJM,20140604,"Smucker Names John Denman as New Officer, Jill Penrose as Corporate Officer",increase,decrease,2.,59
+33,KO,20181106,"Stocks Which Set New 52-Week High Yesterday, Mon., Nov. 5, 2018",decrease,increase,1.,53
+34,CYBR,20160113,10 Stocks Moving In Wednesday's Pre-Market Session,increase,decrease,2.,52
+35,VJET,20140416,"voxeljet Closes Offering of ADSs, Priced 3M ADSs at $15/ADS for Net Proceeds $41.4M",decrease,decrease,2.,72
+36,GPIC,20181127,Shares of Gaming Partners International are trading up 66.7% after Angel announced it is acquiring the company.,increase,decrease,2.,55
+37,FLIR,20160115,Stephens & Co. Initiates Coverage on FLIR Systems at Equal-weight,decrease,increase,1.,59
+38,GOMO,20140528,Morning Market Losers,decrease,increase,1.,36
+39,FRBK,20150728,Republic First Bancorp Reports Quarter Ended EPS $0.014 vs. Est. $0.02,decrease,decrease,2.,59
+40,SANM,20200312,Stocks That Hit 52-Week Lows On Thursday,decrease,increase,1.,47
+41,DG,20180417,"Benzinga's Top Upgrades, Downgrades For April 17, 2018",decrease,increase,1.,50
+42,STE,20180809,"JMP Securities Maintains Market Outperform on STERIS, Raises Price Target to $125",decrease,decrease,2.,55
+43,ARMH,20111027,Why Europe Is Not Really Fixed,decrease,increase,1.,39
+44,SPW,20150501,JP Morgan Upgrades SPX To Overweight,decrease,decrease,2.,41
+45,UEPS,20140910,"8-K from Net 1 UEPS Tech Shows Response to Media Reports, Reiterates Support for Financial Inclusion",increase,decrease,2.,63
+46,DG,20110908,Notable Put Options Activity in Dollar General,increase,increase,1.,41
+47,LRCX,20161007,12 Stocks Which Rallied Three Days On Increasing Volume,decrease,decrease,2.,47
+48,TSLA,20200213,Tesla shares are trading higher. Shares dipped this morning when the company announced an equity offering and have since reversed. The stock has seen heavy momentum in recent weeks.,increase,decrease,2.,71
+49,ADXS,20200226,24 Healthcare Stocks Moving In Wednesday's Pre-Market Session,increase,decrease,2.,53
+50,WDR,20101008,Hold Rating Maintained For WDR,increase,decrease,2.,46
+51,YELP,20160923,18 Biggest Mid-Day Gainers For Friday,increase,decrease,2.,46
+52,IGT,20180717,22 Stocks Moving In Tuesday's Pre-Market Session,decrease,decrease,2.,46
+53,MTLS,20150203,"Stratasys Falls 30%, 3D Sector Follows Suit",increase,decrease,2.,53
+54,VLRS,20200401,"Volaris Announces Temporary Reduction Of Capacity, As A Result Of The Declaration Of Health Emergency In Mexico",increase,decrease,2.,71
+55,BEBE,20140630,Benzinga's Top Downgrades,increase,increase,1.,41
+56,APO,20160314,10 Stocks Moving In Monday's Pre-Market Session,increase,decrease,2.,49
+57,HAWK,20151103,13 Stocks Jim Cramer Is Looking At,increase,increase,1.,48
+58,EWP,20120419,"EU: There Is No Plan To Activate EFSF, ESM For Spanish Banks",increase,decrease,2.,59
+59,BAC,20170925,Notable Premarket Imbalances: SQ 77k To Buy; PFE 130k To Sell; BABA 44k sell; BAC 88; To Sell;,decrease,increase,1.,71
+60,TTM,20170630,Amazon Looks To Boost Summer Sales With 3rd Annual Prime Day,decrease,increase,1.,49
+61,RPM,20191025,Stocks That Hit 52-Week Highs On Friday,decrease,increase,1.,47
+62,KO,20171221,PreMarket Opening NYSE Imbalance Update: General Electric 100k Shares To Sell; Coca-Cola 67K Shares To Sell; Twitter 34k Shares To Sell,decrease,increase,1.,72
+63,ESE,20101228,ESCO Technologies - Upgrades & Downgrades,increase,increase,1.,47
+64,GSAT,20170518,Watch These 8 Huge Call Purchases In Thursday Trade,decrease,increase,1.,45
+65,KVHI,20141110,"KVH Industries, Inc. Reports Q3 EPS of $0.07 vs $0.05 Est; Revenue of $44.30M vs $45.03M Est",increase,decrease,2.,75
+66,CNX,20120306,"Citigroup Maintains Consol Energy at Buy, Lowers PT from $45 to $40",decrease,decrease,2.,53
+67,MGNX,20191219,36 Healthcare Stocks Moving In Thursday's Pre-Market Session,increase,decrease,2.,54
+68,CWCO,20110826,Consolidated Water Co. Ltd. Sustains No Significant Damage From Hurricane Irene's Passage Through Bahamas,decrease,decrease,2.,62
+69,SPB,20120625,Top 4 NYSE Stocks In The Appliances Industry With The Highest ROA,increase,decrease,2.,55
+70,STAG,20150504,STAG Industrial Raises Dividend To $0.1150,increase,increase,1.,49
+71,FRC,20110128,J.P. Morgan Maintains Neutral on First Republic (FRC),decrease,decrease,2.,48
+72,TTM,20101201,TATA Is Doing Nada,decrease,decrease,2.,43
+73,ACMP,20141026,Benzinga's Weekend M&A Chatter,increase,increase,1.,43
+74,PNK,20160815,Pinnacle Entertainment Reports New $50M Buyback,increase,decrease,2.,48
+75,WTFC,20131014,Wintrust Financial Corporation Reports Q3 EPS of $0.71 vs $0.65 Est,increase,decrease,2.,52
+76,DRI,20130621,UPDATE: Darden Posts Lower Q4 Profit,decrease,decrease,2.,48
+77,CEO,20181207,Energy sector shares are trading up after OPEC agreed to cut oil production.,decrease,decrease,2.,49
+78,METR,20160126,Metro Bancorp Reports Q4 EPS $0.38 vs $0.46 Est.,increase,decrease,2.,49
+79,EWI,20130128,"Benzinga Market Primer: Monday, January 28",increase,decrease,2.,50
+80,BHI,20161021,"Hearing Baker Hughes Total Rigs Counts Up 14, US Rigs Up 11",increase,increase,1.,49
+81,ALB,20110913,Albemarle to Increase Prices of Generic Active Pharmaceutical Ingredients by 8-12%,increase,increase,1.,52
+82,AMED,20160208,Benzinga's Top Upgrades,increase,increase,1.,46
+83,FEYE,20160802,Option Alert: FEYE Sep16 19.0 Calls Sweep: 500 @  ASK  $1.24: 1093 traded vs 4651 OI:  Earnings 8/4 After Close  $17.65 Ref,increase,decrease,2.,88
+84,BWA,20171026,BorgWarner Raises FY Outlook,decrease,decrease,2.,43
+85,ISRA,20151103,New ETF Targets Israel's Start-Up Nation Theme,decrease,increase,1.,49
+86,SPR,20140707,Boeing Internal Memo Says Future Shipments from Spirit to Boeing Will Not Be Delayed -Reuters,increase,decrease,2.,59
+87,PFPT,20170126,UPDATE: Proofpoint Sees FY17 Sales $488M-$492M vs $485.2M Est.,increase,decrease,2.,64
+88,MLM,20100921,Jefferies Int'l Prime Time AM,decrease,increase,1.,43
+89,WNC,20180130,"Wabash National Raises FY18 Outlook From $1.55-$1.75 As Of Oct. 31, 2017 To $1.86-$2.02 vs $1.74 Est.",increase,decrease,2.,74
+90,GLUU,20190801,Glu Mobile shares are trading lower after the company reported worse-than-expected Q2 EPS and sales results.,increase,decrease,2.,60
+91,EWP,20120510,EU Aide Says Spain's Deficit-Cut Goal Difficult but Achievable; Spain Not Seeking Extra Time to Erase Deficit -Bloomberg,decrease,decrease,2.,80
+92,MAC,20180327,JP Morgan Downgrades Macerich to Neutral,increase,increase,1.,46
+93,FL,20151210,UPDATE: Canaccord on Foot Locker: 'The Nike relationship is only getting stonger',decrease,decrease,2.,58
+94,RL,20150205,"Goldman Sachs Downgrades Ralph Lauren to Neutral, Lowers PT to $156.00",decrease,decrease,2.,53
+95,MET,20101201,AIG Offers Notes After 2 Years - Analyst Blog,increase,decrease,2.,47
+96,PVH,20140903,PVH Corp. Reports Q2 EPS of $1.51 vs $1.42 Est; Reaffirms EPS Outlook,increase,decrease,2.,62
+97,EWC,20111014,Bank of Canada Buys C $590M in Securities for One Day,decrease,decrease,2.,52
+98,WAGE,20181210,JMP Securities Upgrades WageWorks to Outperform,increase,decrease,2.,49
+99,GPC,20141020,Genuine Parts Company Reports Q3 EPS of $1.24 vs $1.23 Est; Revenue of $4.0B vs $3.93B Est,increase,decrease,2.,68
+100,W,20151110,"Earnings Scheduled For November 10, 2015",increase,decrease,2.,42
+101,SNCR,20170427,Mid-Afternoon Market Update: LeMaitre Vascular Rises After Strong Q1 Results; Synchronoss Technologies Shares Plunge,increase,decrease,2.,69
+102,DG,20140526,Benzinga Weekly Preview: Elections In Focus,increase,increase,1.,44
+103,NLY,20190213,"Earnings Scheduled For February 13, 2019",increase,decrease,2.,44
+104,STLD,20200415,Shares of several material stocks are trading lower amid a warning that oil demand will reach a 25-year low. This has negative implications for industrial production and construction.,increase,decrease,2.,69
+105,PSG,20150213,Fast Money Picks For February 13,decrease,decrease,2.,38
+106,ARNA,20190807,"The Daily Biotech Pulse: Novartis Stands By Zolgensma, GW Pharma Q2 Propelled By Epidiolex Sales, Ionis-Akcea Clinical Readout",increase,increase,1.,81
+107,HCI,20150804,"HCI Group Reports Q2 EPS $1.93 vs. Est. $1.82, Rev. $76.4M vs. Est. $78.37M",increase,decrease,2.,73
+108,OEC,20151015,Orion Engineered Carbons Acquires Evonik and DEG Shares in Chinese Carbon Black Joint Venture,increase,decrease,2.,69
+109,LAKE,20200224,Italy Reports Fifth Death from Coronavirus,increase,increase,1.,46
+110,SYY,20180205,"Sysco Reports Q2 Adj. EPS $0.78 vs $0.65 Est., Sales $14.4B vs $14.2B Est.",decrease,decrease,2.,65
+111,EAT,20130109,"UPDATE: Morgan Stanley Upgrades Brinker International to Overweight on Visibility, Execution and Cash Flow",decrease,decrease,2.,62
+112,CNQ,20180301,"Earnings Scheduled For March 1, 2018",increase,decrease,2.,42
+113,APO,20180208,Apollo Global Management Plans IPO for Ceva Logistics by April -NY Post,increase,decrease,2.,51
+114,BOSC,20130806,"BOS Better OnLine Sol (USA) Halted on Circuit Breaker, Stock Up 53%",decrease,decrease,2.,58
+115,BNFT,20141106,Benefitfocus Reports Q3 EPS of $(0.62) vs $(0.70) Est; Revenue of $34.20M vs $33.88M Est,increase,decrease,2.,74
+116,BZH,20100616,Citi Sees Opportunity In Beazer Homes (BZH),increase,decrease,2.,52
+117,BFS,20110728,General Growth Properties Earnings Preview,decrease,decrease,2.,43
+118,LMT,20160426,Lockheed Raises FY16 Outlook,increase,increase,1.,41
+119,NCMI,20150512,National CineMedia Shares Upgraded To Outperform,decrease,increase,1.,49
+120,IBM,20161027,IBM to Acquire Sanovi Technologies; Terms Not Disclosed,decrease,decrease,2.,46
+121,CMCSA,20180517,WWE Could Be In A Bidding War For 'Smackdown Live' While 'Raw' Gets Big Renewal,decrease,increase,1.,64
+122,TSEM,20161221,4 Stocks With Technical Momentum,decrease,increase,1.,44
+123,VIP,20111128,"Fast Money Picks For November 29th (VIP, MBT, HD, CF, NCR)",decrease,decrease,2.,53
+124,AKR,20161025,"Acadia Reports Q3 FFO/Share $0.36 vs $0.35 Est, Rev $51.1M",increase,decrease,2.,56
+125,XLF,20120514,"Fed, FDIC Release Final Guidance on Bank Stress Testing; Emphasize Need for Strong Internal Governance",decrease,decrease,2.,57
+126,DCT,20160329,"Footlocker To Replace Cameron International In S&P 500 Index, DCT Industrial Added To S&P MidCap 400 Index",increase,decrease,2.,62
+127,TIF,20120110,UPDATE: Tiffany Reports Holiday Sales up 7% YoY,increase,decrease,2.,48
+128,APC,20181207,Energy sector shares are trading up after OPEC agreed to cut oil production.,decrease,decrease,2.,52
+129,FBC,20150630,Benzinga's Top Downgrades,increase,increase,1.,47
+130,MU,20141017,Micron Tech's Bailey Plans For Sale Of Up To 48K Shares,decrease,increase,1.,52
+131,TUP,20200605,75 Stocks Moving In Friday's Mid-Day Session,decrease,decrease,2.,49
+132,ZQK,20150318,"Keep an Eye on These 10 Stocks for March 18, 2015",decrease,decrease,2.,44
+133,KEG,20190322,Shares of the overall market are trading lower after the U.S. Treasury yield curve inverted for the first time since 2007.,increase,decrease,2.,63
+134,APRI,20130522,Apricus Biosciences Announces Proposed Public Offering of Common Stock and Warrants,increase,decrease,2.,60
+135,NOC,20131230,FAA Announces New York and Texas as Two of the First Locations For Developing Drone Standards,decrease,increase,1.,58
+136,ACOR,20170403,22 Stocks Moving In Monday's Pre-Market Session,decrease,decrease,2.,53
+137,BCE,20131128,"DHX Media to Acquire Family Channel, Disney XD, and Disney Junior from Bell Media",decrease,increase,1.,56
+138,MCRI,20191030,"Monarch Casino & Resort Q3 EPS $0.5 Down From $0.58 YoY, Sales $65.585M Up From $64.359M YoY",increase,decrease,2.,70
+139,CALA,20150220,5 Healthcare Stocks With The Highest EPS Growth Forecast For Next 5 Years,increase,increase,1.,55
+140,AAP,20180814,A Peek Into The Markets: US Stock Futures Point To Higher Wall Street Open,decrease,increase,1.,56
+141,MGA,20100413,Magna International (MGA) Looking To Capitalize From Its Strong Cash Position,increase,decrease,2.,49
+142,SYNA,20100210,"Lightening Round: Jim Enthusiastic About ACOR, RMBS, VM, ERTS, CHU",increase,increase,1.,64
+143,FTNT,20150421,Benzinga's Top #PreMarket Gainers,decrease,increase,1.,49
+144,ARES,20180215,40 Stocks Moving In Thursday's Mid-Day Session,increase,increase,1.,48
+145,CVRR,20130610,"Goldman Sachs Initiates Coverage on CVR Refining at Neutral, Announces $37.00 PT",increase,increase,1.,65
+146,CLX,20160920,"Top Performing Industries For September 20, 2016",increase,decrease,2.,40
+147,MNKD,20160419,"UPDATE: MannKind PR Confirms Conf. Call Moved To Apr. 26th, 2016",decrease,decrease,2.,60
+148,GENE,20111130,"Microcap Movers for Wednesday November 30, 2011",increase,decrease,2.,42
+149,BRDR,20150506,Needham Downgrades Borderfree to Hold,increase,increase,1.,41
+150,CYBR,20160113,Cybersecurity Stocks Moving On Cyberark M&A Talk,increase,increase,1.,50
+151,KND,20160404,"Ventas, Kindred In Agreement to Improve LTAC Portfolio Operated by Kindred",decrease,decrease,2.,54
+152,LUV,20190814,"Morgan Stanley Maintains Overweight on Southwest Airlines, Lowers Price Target to $59",decrease,decrease,2.,50
+153,FIG,20160310,Fortress Investment Group Announces Results of Modified Dutch Auction Offer: ~4.799M Shares at $4.75/Share,increase,decrease,2.,58
+154,ZNGA,20190130,"Benzinga's Top Upgrades, Downgrades For January 30, 2019",decrease,increase,1.,57
+155,PAGP,20171026,Benzinga's Option Alert Recap From October 26,decrease,decrease,2.,55
+156,HTGC,20180802,"Hercules Technology Q2 Adj. NII/Share $0.29 Beats $0.28 Estimate, Total Investment Income $49.6M Beat $48.64M Estimate",increase,decrease,2.,76
+157,OSTK,20120305,"Bank of America Maintains Overstock at Underperform, Lowers PO from $7.5 to $7",decrease,decrease,2.,58
+158,CRME,20150722,Cardiome Submits Supplemental New Drug Submission (sNDS) For AGGRASTAT To Health Canada,decrease,decrease,2.,57
+159,ALLT,20130123,"Allot Communications Shares Charge Higher as Barclays Sees Nearly 50% Upside, Initiates at Overweight",increase,increase,1.,65
+160,MNST,20130509,"Benzinga Market Primer: Thursday, May 9",increase,decrease,2.,46
+161,JIVE,20121012,Benzinga's Top Downgrades,increase,increase,1.,41
+162,ETE,20160226,CNCB Now Tweets: '$ETE $WMB deal could face shareholder vote which may not happen until May ',decrease,increase,1.,66
+163,BIO,20191120,"The Daily Biotech Pulse: Endo's Cellulite Treatment Accepted For Review, Diffusion Pharma Reports Positive Glioblastoma Data",increase,decrease,2.,81
+164,PZZA,20181127,Papa John's shares fall 10.2% following reports Trian Fund Management is no longer looking at a bid for the company.,increase,decrease,2.,62
+165,EVDY,20150811,Everyday Health Acquires Tea Leaves Health; Terms Not Disclosed,increase,increase,1.,49
+166,TEN,20120727,"Jefferies & Company Maintains Tenneco at Buy, Lowers PT from $38 to $37",decrease,decrease,2.,63
+167,PTIE,20101027,Pain Therapeutics Declares Special One-Time Cash Distribution of $2.00,increase,decrease,2.,51
+168,SCSC,20180508,"ScanSource Q3 EPS $0.68 Misses $0.70 Estimate, Sales $895.6M Beat $875.91M Estimate",increase,decrease,2.,67
+169,MAR,20110714,"Rodman & Renshaw Concerned About Mariott's Pace of Recovery, Lowers PT to $38 from $43",increase,decrease,2.,63
+170,HMSY,20140228,"Earnings Scheduled For February 28, 2014",decrease,decrease,2.,47
+171,AES,20110408,The AES Corporation Hits 52-Week High (AES),increase,increase,1.,47
+172,F,20191006,"Benzinga's Bulls And Bears Of The Week: Amazon, Apple, Disney, Ford And More",decrease,increase,1.,56
+173,MU,20190930,Micron Analyst Says Lower DRAM Prices Over First Half Of 2020 Will Delay Margin Recovery,decrease,decrease,2.,56
+174,HUM,20131103,"Earnings Expectations For The Week Of November 4: Disney, Tesla, Groupon And More",decrease,decrease,2.,53
+175,CMCSA,20161118,"AT&T: Too Big To Fail, Or Too Big Not To Fail?",decrease,decrease,2.,53
+176,WIN,20190226,"Benzinga's Top Upgrades, Downgrades For February 26, 2019",increase,increase,1.,56
+177,CRVP,20110711,Crystal Rock Holdings up Over 41% on Heavy Volume,decrease,decrease,2.,49
+178,PANW,20140324,US Stock Futures Up Ahead Of Manufacturing PMI,increase,increase,1.,50
+179,KALU,20180531,"Canada Will Impose 25% Tariff On US-Exported Steel, 10% Tariff On US Aluminum",increase,increase,1.,54
+180,AET,20110620,Stocks and Sectors to Watch: S&P 500 Recap 6/20/11,increase,decrease,2.,53
+181,BDC,20170508,12 Biggest Mid-Day Losers For Monday,increase,decrease,2.,44
+182,SLV,20161121,Technical Alert: Silver Futures Flat And Range Bound,decrease,decrease,2.,46
+183,DDD,20130205,3D Systems Announces 3-for-2 Stock Split,increase,decrease,2.,44
+184,QLIK,20110708,Options Brief: Qlik Technologies,increase,decrease,2.,38
+185,NFX,20101022,Jefferies & Company Will Remain In Oilier Names Trading Below P1 Value On 2011 Reserves,increase,decrease,2.,57
+186,EBAY,20130114,"UPDATE: Credit Suisse Reiterates Neutral Rating, Raises PT on eBay",increase,increase,1.,54
+187,TAL,20191216,"Shares of several Chinese companies are trading higher. Strength is related to the preliminary Phase One US-China trade agreement, which includes agriculture purchases by China.",increase,decrease,2.,64
+188,PGR,20170518,"Benzinga's Top Upgrades, Downgrades For May 18, 2017",decrease,increase,1.,48
+189,MTW,20110901,Top 4 Small-Cap Stocks In The Farm & Construction Machinery Industry With The Highest Cash,increase,decrease,2.,59
+190,RECN,20131227,Benzinga Weekly Preview: US Markets Ending The Year On A High Note,increase,decrease,2.,53
+191,CHL,20140115,Apple CEO Tim Cook: Apple has Sold More iPhones in Greater China Than at Any Time in the Past -WSJ,decrease,decrease,2.,58
+192,CVS,20170209,Q4 2016 Real-Time Call Brief,increase,decrease,2.,47
+193,SCSC,20111027,ScanSource Sees Q2 EPS $0.64-$0.67 vs $0.73 Est; Revenues $755-$775M vs $774.3M Est,increase,decrease,2.,76
+194,MHR,20130812,"Wunderlich Maintains Buy on Magnum Hunter Resources Corporation, Lowers PT to $8.00",decrease,decrease,2.,50
+195,EGY,20180517,VAALCO Energy Shares Up 22.5%; Shares Gained Wednesday In Sympathy With Other Energy Stocks On News Of Oil Price Rebound,increase,decrease,2.,69
+196,GPS,20170106,18 Stocks Moving In Friday's Pre-Market Session,decrease,decrease,2.,49
+197,SBUX,20181213,Starbucks Is Partnering With Uber Eats And Bringing Starbucks Deliveries To Nearly A Quarter Of Co.'s US Company-Operated Stores In 2019,increase,increase,1.,68
+198,NJR,20120207,Earnings Scheduled For February 7,increase,decrease,2.,41
+199,AMED,20200218,Amedisys shares are trading lower after the company reported worse-than-expected Q4 EPS and sales results.,increase,increase,1.,63
+200,BLUE,20151205,bluebird bio Reports New Beta-thalassemia Major Data from Northstar Study of LentiGlobin at #ASH2015,increase,decrease,2.,67
+201,LLY,20181207,"Pot Stocks, ETFs, Top News And Data From The Cannabis Industry This Week",decrease,decrease,2.,54
+202,CCK,20140623,Top 4 NYSE Stocks In The Packaging & Containers Industry With The Highest Revenue,increase,decrease,2.,54
+203,BTI,20160428,"E-Cigarettes Benefit Public Health, The Royal College Of Physicians In The UK Says",decrease,decrease,2.,61
+204,ZLTQ,20121010,ZELTIQ Aesthetics Files Legal Action and Preliminary Injuction,increase,increase,1.,53
+205,EBAY,20170502,Myntra in talks with Ralph Lauren for Exclusive Online Deal for India,decrease,decrease,2.,48
+206,APH,20160720,"Amphenol Reports Q2 Adj. EPS $0.58 vs $0.63 Est., Sales $1.548B vs $1.52B Est.",decrease,decrease,2.,67
+207,BRCD,20161102,7 Stocks That Rallied Three Days On Increasing Volume,decrease,decrease,2.,44
+208,TIVO,20181120,"Stocks Which Set New 52-Week Low Yesterday, Mon., Nov. 19, 2018",decrease,increase,1.,54
+209,GLP,20200317,"Shares of several oil companies are trading lower as oil prices fall amid the global coronavirus outbreak, which has weakened travel and commercial activity. Saudi Aramco reiterated plans to boost output, further pressuring prices.",increase,decrease,2.,80
+210,CSIQ,20130708,Canadian Solar Selected by Argand Energy Solutions for North Carolina Solar Project,increase,increase,1.,50
+211,B,20121026,Barnes Group Reports Q3 EPS $0.38 vs $0.48 Est; Revenues $306.1M vs $318.42M Est,increase,decrease,2.,64
+212,AMT,20180926,"'FCC, Seeking More 5G Deployment, Limits Fees' -Bloomberg",decrease,decrease,2.,57
+213,DNKN,20111221,Boston Beer and Starbucks to Open Near 52-Week Highs,decrease,decrease,2.,52
+214,NSC,20181218,Large 3PLs Break Into Frothy Memphis Headhaul Market,decrease,increase,1.,49
+215,STAY,20140507,Extended Stay America Reports Q1 EPS of $0.11 vs $0.12 Est; Revenue of $270.30M vs $267.88M Est,increase,decrease,2.,71
+216,CCOI,20140807,"Cogent Communications Raises Qtr. Dividend from $0.17 to $0.30/Share, Adds $50M to Buyback Plan",increase,decrease,2.,63
+217,CTBI,20130423,"Community Trust Bancorp, Inc. Sees FY2013 EPS $2.90-3.06 vs $2.94 Est",decrease,decrease,2.,62
+218,VHC,20140425,Shares of VirnetX Move Higher; May be Due to Mention in Court Document Released Earlier in Apple vs Motorola,increase,increase,1.,65
+219,WTFC,20200306,Stocks That Hit 52-Week Lows On Friday,decrease,increase,1.,45
+220,XRT,20131230,"Economic Calendar for Tuesday December 31, 2013",decrease,decrease,2.,44
+221,DIA,20200417,Morning Market Stats in 5 Minutes,decrease,decrease,2.,44
+222,INO,20200223,All Train Traffic between Austria and Italy has been Suspended Due to Coronavirus Concerns,increase,increase,1.,57
+223,FAS,20101003,"Technically, This Financial ETF Looks Very Solid (NYSE:FAS), (NYSE:FAZ), (NYSE:C)",increase,decrease,2.,64
+224,VLP,20150505,"Valero Energy Partners Reports Q1 EPS $0.37 vs $0.28 Est., Sales $41.9M vs $33M Est.",decrease,decrease,2.,75
+225,AVP,20151124,Benzinga's Top Upgrades,increase,increase,1.,44
+226,MRO,20140616,Fitch Upgrades Marathon IDR to BBB+; Outlook Lowered from Positive to Stable,decrease,decrease,2.,52
+227,HSBC,20171115,HSBC To Pay $353 Million To Settle French Tax-Fraud Probe,increase,decrease,2.,55
+228,POWR,20101223,PowerSecure Announces $10 Million Contract,decrease,increase,1.,42
+229,FXA,20130708,"ETFs to Watch July 8, 2013 (EGPT, MUB, XLB)",increase,decrease,2.,56
+230,JQC,20181121,"Stocks Which Set New 52-Week Low Yesterday, Tues., Nov. 20, 2018",decrease,increase,1.,57
+231,USAC,20140218,USA Compression Reports Q4 EPS of $0.12 vs $0.20 Est; Revenue of $48.60M vs $47.47M Est,increase,decrease,2.,75
+232,TX,20160223,"Ternium Reports Q4 EPS $(0.64) vs. Est. $0.43, Rev. $1.8B vs. Est. $1.84B",increase,decrease,2.,76
+233,MS,20170329,"Benzinga's Top Upgrades, Downgrades For March 29, 2017",decrease,decrease,2.,48
+234,TPL,20110622,Top 4 Small-Cap Stocks In The Real Estate Development Industry With The Highest EPS,increase,decrease,2.,52
+235,CACI,20180620,CACI Raises FY18 EPS Outlook From $11.26-$11.50 To $11.54-$11.74 vs $11.59 Est.,increase,decrease,2.,70
+236,POR,20111103,Earnings Roundup,decrease,decrease,2.,38
+237,HZO,20171101,46 Biggest Movers From Yesterday,decrease,decrease,2.,41
+238,BSFT,20160502,"BroadSoft Reports Q1 EPS $0.37 vs. Est. $0.26, Rev. $73.1M vs. Est. $71.59M",increase,decrease,2.,72
+239,SINA,20111005,Sina Corp Denies Takeover Talk,decrease,decrease,2.,43
+240,COH,20110912,"Mad Money Lightning Round: Cramer Likes Alcoa, Coach",decrease,increase,1.,46
+241,UA,20121025,"DA Davidson Maintains Under Armour Class A at Neutral, Lowers PT from $60 to $57",increase,decrease,2.,62
+242,ATSG,20160309,Mid-Morning Market Update: Markets Mostly Higher; Express Q4 Earnings Top Views,increase,decrease,2.,58
+243,QRVO,20190522,"Step Aside, China: Earnings Dominate, With Target Impressing But Lowe's, Nordstrom Not",decrease,decrease,2.,62
+244,BUD,20190308,Jefferies Bearish On Tilray: 'The Stock Is Too Expensive For Its Outlook',decrease,decrease,2.,66
+245,FAS,20100506,"Direxion 3X Long Financials ETF Down 15%, Finding Buyers",increase,decrease,2.,53
+246,PTR,20110316,Options Brief: PetroChina Company (PTR),decrease,increase,1.,49
+247,FAS,20100901,"Benzinga's Top ETF Gainers (URTY, TNA, FAS, ERX, EDC)",decrease,decrease,2.,64
+248,RLI,20191202,52 Biggest Movers From Friday,decrease,decrease,2.,40
+249,L,20200504,Loews shares are trading lower after the company reported Q1 sales down from last year.,decrease,decrease,2.,54
+250,PTCT,20170726,"Lightning Round: Jim Cramer Advises His Viewers On Hertz, Macy's And More",increase,decrease,2.,61
+251,APRI,20110617,Apricus Biosciences' CEO Sees Higher Revenue if Pfizer Viagra Litigation is Successful,decrease,increase,1.,63
+252,AYR,20171208,"Citigroup Initiates Coverage On Aircastle with Neutral Rating, Announces $25.00 Price Target",increase,increase,1.,57
+253,PSA,20181218,"Benzinga's Top Upgrades, Downgrades For December 18, 2018",increase,decrease,2.,48
+254,FCEL,20161129,Stocks Hitting 52-Week Lows,increase,decrease,2.,48
+255,LAKE,20160609,WHO Says Liberia Free of Active Ebola Transmission -Reuters,increase,decrease,2.,54
+256,M,20141113,Morgan Stanley Expects 4Q Outperformance For Macy's,decrease,decrease,2.,48
+257,SSYS,20160303,"Stratasys Sees FY16 Rev. $700-$730M v.s Est. $700M, EPS $0.17-$0.43 vs. Est. $0.18",increase,decrease,2.,86
+258,ANET,20180709,5 Reasons Why Arista Is Now Piper Jaffray's No. 2 Networking Pick,increase,increase,1.,57
+259,MEIP,20151207,"MEI Pharma Announces Positive Results from Phase II Study of Pracinostat in Acute Myeloid Leukemia, Plans to Initiate Phase III Registration Study",increase,decrease,2.,73
+260,PNQI,20200421,3 ETFs For Netflix Earnings,decrease,increase,1.,48
+261,BAX,20101028,China & Grain Markets  10-28-2010,increase,decrease,2.,46
+262,RHI,20200501,Shares of several industrial companies are trading lower on market weakness as investor uncertainty grows following quarterly earnings results from multiple companies.,decrease,decrease,2.,58
+263,F,20190910,"Ford Motor Introducing New Smartphone, Tablet Application That Will Enable Plug-in Hybrid Vehicle Owners, Operators To Locate, Navigate To & Pay For Charging",decrease,increase,1.,70
+264,INDA,20160125,India's Nifty 50 Index Breaks Key Support,decrease,decrease,2.,49
+265,STX,20110420,Wedbush Raises PT on Seagate Technology To $20,decrease,increase,1.,50
+266,SJM,20181128,"J.M. Smucker Company (The) Q2 EPS $2.17 Misses $2.33 Estimate, Sales $2.022B Miss $2.05B Estimate",increase,decrease,2.,79
+267,ATRA,20200228,"The Daily Biotech Pulse: Sangamo In Genome-Editing Therapy Deal With Biogen, FDA Nod For Biohaven, Passage Bio IPO",increase,increase,1.,75
+268,PSG,20160308,Mid-Afternoon Market Update: Crude Oil Down 3%; Performance Sports Group Shares Tumble After Guidance Cut,increase,increase,1.,59
+269,BEN,20110914,"One Financial Services ETF Worth A Look, S&P Says",increase,decrease,2.,48
+270,FCF,20200430,"DA Davidson Maintains Neutral on First Commonwealth, Lowers Price Target to $9",increase,decrease,2.,51
+271,BC,20110406,"Longbow Upgrades Brunswick Corporation To Buy, $32 PT",increase,increase,1.,44
+272,AGIO,20190912,"BMO Capital Initiates Coverage On Agios Pharmaceuticals with Outperform Rating, Announces $45 Price Target",decrease,increase,1.,66
+273,RMAX,20171113,RE/MAX Files for Non-Timely 10Q,increase,increase,1.,53
+274,FDX,20140619,US Stock Futures Flat Ahead Of Jobless Claims,decrease,decrease,2.,44
+275,ACST,20190627,"A Look At Benzinga Pro's Most-Searched Tickers For June 27, 2019",decrease,increase,1.,61
+276,GOLD,20200409,Shares of several gold stocks are trading higher amid overall market strength after the US Federal Reserve announced a further $2.3 trillion in financing programs to support the economy.,increase,decrease,2.,67
+277,AVNR,20111213,Stocks To Watch For December 13,decrease,decrease,2.,39
+278,CP,20120411,UPDATE: Credit Suisse Raises Canadian Pacific's PT,decrease,increase,1.,46
+279,RICE,20140422,"Clarkson Capital Downgrades Rice Energy to Market Perform, Maintains $29.00 PT",increase,decrease,2.,49
+280,PDCO,20190829,Stocks That Hit 52-Week Lows On Thursday,increase,decrease,2.,48
+281,FV,20160321,Focus 5 ETF Gets A Dynamic Counterpart,increase,increase,1.,48
+282,GMED,20190102,Mid-Day Market Update: Crude Oil Up Over 3%; Prana Biotechnology Shares Jump,increase,decrease,2.,59
+283,BAH,20160120,Jefferies Initiates Coverage on Booz Allen Hamilton Hldg at Buy,decrease,increase,1.,58
+284,PIR,20180103,Pier 1 Import Names Nancy Walsh CFO,increase,decrease,2.,47
+285,CL,20181029,"Stocks Which Set New 52-Week Low Friday, October 26th",decrease,decrease,2.,52
+286,HW,20110106,"Mad Money Lightning Round: Cramer Likes Atmel (SRE, DUK, IVAN, FLR, HW, C, HES, XOM, PBCT, ATML)",decrease,decrease,2.,75
+287,HOT,20141121,US Stock Futures Rise Ahead Of Earnings,decrease,decrease,2.,41
+288,HRT,20150302,"Micron Products Names Michael Collette VP, Quality",increase,decrease,2.,43
+289,SR,20180504,Bank of America Downgrades Spire to Neutral,decrease,increase,1.,44
+290,DGX,20131119,Benzinga's Top Initiations,increase,increase,1.,46
+291,IWM,20180517,"Benzinga Pro Mid-Day Price Check For Major Averages: Russell 2000 Up 5 (0.3%), S&P 500 Down 6 (0.2%), Dow 30 Down 7 (0.3%), Nasdaq Down 35 (0.5%)",decrease,decrease,2.,87
+292,NVGN,20150327,60 Minutes Would Not Confirm Novogen Would be Mentioned in Upcoming 2-Part Segment on Brain Cancer Treatment,increase,increase,1.,58
+293,GNCA,20140407,Genocea Appoints Jonathan Poole as CFO,decrease,decrease,2.,50
+294,CPK,20200528,Mid-Morning Market Update: Markets Rise; Dollar Tree Profit Beats Estimates,decrease,decrease,2.,59
+295,MATW,20101022,"Top 4 Stocks In The Metal Fabrication Industry With The Highest ROE (PCP, MATW, VMI, PKOH)",decrease,decrease,2.,66
+296,DXCM,20180514,Piper Jaffray: Tandem Diabetes Is Entering A 'Goldilocks Period',increase,decrease,2.,59
+297,ALU,20150512,Wells Fargo: Nokia HERE Sale Would Be 'Positive' For Investors,decrease,decrease,2.,52
+298,JNPR,20180227,Standpoint Research Upgrades Juniper Networks to Buy,increase,increase,1.,45
+299,PLCM,20160519,Mitel Reports FTC Approval for Proposed Deal of Polycom,decrease,decrease,2.,48
+300,MFC,20111214,Manulife Financial Hits 52-Week Low of $10.11,increase,decrease,2.,50
+301,DGLY,20190618,40 Stocks Moving In Tuesday's Mid-Day Session,increase,decrease,2.,52
+302,IT,20190508,"Morgan Stanley Maintains Equal-Weight on Gartner, Inc. Common Stock, Raises Price Target to $148",decrease,decrease,2.,60
+303,SBAC,20190729,New Equities that Broke Through 52-Week Highs Monday Morning,increase,increase,1.,48
+304,KEYS,20200601,10 Biggest Price Target Changes For Monday,decrease,decrease,2.,46
+305,THRX,20100321,How Will Obama-Care Play Into The Markets And ETFs?,decrease,increase,1.,49
+306,TRIP,20130912,"Orbitz CEO Harford Just Spoke on CNBC's Fast Money, Said Bookings for Hotels Looking Good for Rest of 2013, Highlighted Mobile Bookings ~50% of Hotel Bookings",decrease,decrease,2.,81
+307,BECN,20180911,51 Biggest Movers From Yesterday,decrease,decrease,2.,46
+308,SHW,20161129,Atlantic Equities Initiates Coverage On Sherwin-Williams at Overweight,increase,increase,1.,62
+309,ADI,20160818,Solid Q3 Results From Analog Devices Paired With Positive Q4 Guidance,decrease,decrease,2.,56
+310,CALM,20100927,"Earnings Scheduled For September 27 (JBL, CALM, PAYX, FGP, THO, GBX, VLGEA)",increase,decrease,2.,74
+311,JNJ,20150113,"J&J's Janssen, Johnson & Johnson Innovation Report License Deal with Vedanta Related to Microbiome Pharma Candidate for Inflammatory Bowel Disease",increase,decrease,2.,70
+312,TYL,20170802,"Tyler Technologies Acquires Digital Health Department, Terms Not Disclosed",decrease,increase,1.,49
+313,RSXJ,20130116,"ETFs to Watch January 16, 2013 (GDXJ, IDX, TBT)",increase,decrease,2.,58
+314,TPLM,20130909,"Benzinga Market Primer: Monday, September 9: Futures Up As Japan Starts The Week Off With A Bang",increase,decrease,2.,58
+315,SIF,20200218,"Sifco Industries Q1 EPS $(0.24) Down From $(0.23) YoY, Sales $26.2M Down From $29.067M YoY",increase,decrease,2.,70
+316,JNJ,20121002,S&P Index and Big 10 Weekly Outlook,decrease,decrease,2.,42
+317,ULTI,20150519,Needham Upgrades Ultimate Software Group to Buy,increase,decrease,2.,44
+318,TAL,20170822,"Jim Cramer Advises His Viewers On Autodesk, Burlington And More",decrease,decrease,2.,54
+319,OGXI,20120309,UPDATE: Bloom Burton Cuts PT to $24 on OncoGenex Pharmaceuticals,decrease,decrease,2.,53
+320,CVS,20191106,62 Stocks Moving In Wednesday's Mid-Day Session,decrease,decrease,2.,54
+321,DO,20190909,"Pareto Downgrades Diamond Offshore Drilling to Hold, Lowers Price Target to $6.3",decrease,decrease,2.,57
+322,JACK,20170921,Jim Chanos Tells CNBC He Is Shorting Burger Chain Stocks Due To McDonald's 'Upping the game for everybody else'; He Did Say He's Not Short McDonald's Or Shake Shack,increase,increase,1.,85
+323,ELRC,20140811,Electro Rent Corporation Reports Q4 EPS of $0.19 vs $0.22 Est,decrease,decrease,2.,50
+324,OCLR,20131115,Stocks Hitting 52-Week Highs,increase,decrease,2.,44
+325,ACOR,20110801,Earnings Roundup,increase,decrease,2.,44
+326,CRZO,20130227,"UPDATE: Canaccord Genuity Reiterates Buy Rating, Lowers PT on Carrizo Oil & Gas on Higher NGL Composition",decrease,decrease,2.,72
+327,BMY,20170427,"Earnings Scheduled For April 27, 2017",increase,decrease,2.,48
+328,WAB,20170725,"Watching Wabco Shares Here Amid Report ZF Recently Held Advanced Takeover Discussions With Co., But Talks Broke Down Due To Resistance From The ZF Board",increase,increase,1.,72
+329,GDX,20160505,It's Not Surprising What's Boosting Gold Miners ETFs,decrease,decrease,2.,59
+330,BGG,20111102,Briggs & Stratton Corporation Acquires Premier Products in India for $3M in Cash,increase,decrease,2.,63
+331,LXFR,20180921,"Stocks Which Set New 52-Week High Yesterday, September 20th",decrease,increase,1.,54
+332,E,20100630,Dendreon Plunging After Hours (DNDN),increase,decrease,2.,51
+333,COF,20150423,Capital One Financial Q1 Earnings Top Views,increase,increase,1.,43
+334,NUAN,20171129,33 Stocks Moving In Wednesday's Mid-Day Session,increase,decrease,2.,50
+335,EXFO,20160630,10 Biggest Mid-Day Losers For Thursday,decrease,decrease,2.,44
+336,NXPI,20110729,Options Brief: NXP Semiconductors,increase,decrease,2.,51
+337,NRZ,20181101,35 Stocks Moving In Thursday's Pre-Market Session,increase,decrease,2.,54
+338,ACT,20150504,Cooperman Likes Actavis,decrease,increase,1.,43
+339,MW,20140611,"Men's Wearhouse Reports Waiver of Marketing Period Condition, Tender Will Expire Jun. 17th at Midnight",decrease,decrease,2.,59
+340,INVE,20190206,48 Stocks Moving In Wednesday's Mid-Day Session,increase,decrease,2.,51
+341,FDX,20200317,Q3 Earnings Preview For FedEx,increase,decrease,2.,41
+342,ASNA,20140604,Ascena Q3 Conference Call Highlights,increase,decrease,2.,50
+343,PVH,20190829,Cowen Slashes PVH Price Target: 'We Need More Clarity On Sustainable Free Cash Flow',increase,decrease,2.,56
+344,FRO,20191120,5 Energy Stocks Moving In Wednesday's Pre-Market Session,decrease,decrease,2.,48
+345,TASR,20161003,18 Stocks Moving In Monday's Pre-Market Session,increase,decrease,2.,46
+346,TWX,20150102,Yahoo! Cable Acquisition Rumors Denied,increase,decrease,2.,42
+347,CCI,20121203,"Goldman Sachs Maintains Neutral on Crown Castle International Corporation, Raises PT to $70.00",decrease,decrease,2.,58
+348,VRTS,20190411,"Barclays Maintains Equal-Weight on Virtus Investment, Raises Price Target to $115",decrease,decrease,2.,56
+349,FL,20110523,"Upgrades Downgrades, Stocks to Watch May 23",decrease,decrease,2.,47
+350,AU,20190603,64 Biggest Movers From Friday,decrease,decrease,2.,42
+351,CLR,20180705,"TD Securities Initiates Coverage On Continental Resources with Hold Rating, Announces $73 Price Target",decrease,increase,1.,62
+352,RKUS,20130213,"Good Growth, Conservative Outlook at Ruckus Wireless",increase,decrease,2.,42
+353,PSEC,20150401,Prospect Capital Provides Incremental $58.7M of First-Lien Floating-Rate Debt to IWCO Direct,decrease,decrease,2.,63
+354,DCIX,20161116,Benzinga's Volume Movers,increase,decrease,2.,43
+355,ENDP,20170523,Watch These 7 Huge Call Purchases In Tuesday Trade,increase,increase,1.,47
+356,EEM,20100609,"Sector Funds: Best, Worst, and Mid-Year 2010 Stock Market Outlook (SPY, XLF, XLE, XLP, EEM)",decrease,decrease,2.,77
+357,GMCR,20110805,Green Mountain Roasters Chairman to Sell Up to 2M Shares,decrease,decrease,2.,45
+358,IT,20090818,DiMantova & Associates Concludes Engagement With Responsive Auto,decrease,decrease,2.,52
+359,SCHP,20130221,Schwab ETFs Reach $10B in Combined Assets,decrease,decrease,2.,52
+360,ACAT,20120727,"BMO Capital Markets Maintains Arctic Cat at Outperform, Raises PT from $45 to $50",decrease,decrease,2.,54
+361,MSO,20140102,"UPDATE: Macy's, Martha Stewart Living Omnimedia Settle Legal Dispute",increase,decrease,2.,51
+362,OPTT,20100427,"Ocean Power Technologies Moves Towards Commercial Production (OPTT, GE, VWDRY)",decrease,decrease,2.,56
+363,RDN,20200323,71 Stocks Moving In Monday's Mid-Day Session,decrease,decrease,2.,49
+364,EGPT,20110211,Benzinga's Political Roundup (EGPT),decrease,decrease,2.,51
+365,MOH,20110417,Monday's Economic and Earnings Schedule,increase,decrease,2.,44
+366,DM,20130911,Top 4 Stocks In The Publishing-Periodicals Industry With The Lowest PEG Ratio,decrease,decrease,2.,60
+367,CPE,20141120,Mid-Afternoon Market Update: Best Buy Rises After Upbeat Results; GoPro Shares Slide,decrease,decrease,2.,56
+368,EDS,20110413,A Peek Into The Market Before The Trading Starts,decrease,decrease,2.,43
+369,DLB,20200313,"JP Morgan Upgrades Dolby Laboratories to Overweight, Announces $66 Price Target",decrease,decrease,2.,61
+370,VVUS,20140403,"Piper Jaffray Downgrades VIVUS, Inc. to Underweight, Lowers PT to $3.00",increase,increase,1.,62
+371,TSLX,20180801,"TPG Specialty Lending Q2 EPS $0.56 Beats $0.47 Estimate, NAV/Share $16.36; Co. Announces $0.08/Share Supplemental Dividend",increase,decrease,2.,78
+372,MDC,20180713,JP Morgan Upgrades M.D.C. Holdings to Neutral,decrease,decrease,2.,58
+373,BAC,20200416,Here's How Long It Took Visa To Reach A $100B Market Cap,decrease,decrease,2.,49
+374,MDP,20170305,A Timeline Ahead Of Time's Buyout,increase,increase,1.,44
+375,ICUI,20190808,What Caused The Opening Gap In ICU Medical?,increase,increase,1.,49
+376,SHPG,20160520,"JP Morgan Maintains Overweight on Shire, Raises PT to $239.00, Adds To Analyst Focus List",decrease,decrease,2.,62
+377,CR,20100324,"Top 5 NYSE Stocks In The Conglomerates Sector With The Highest Dividend (PPG, MMM, UTX, CBE, CR)",increase,decrease,2.,67
+378,CFX,20160117,"Barron's 2016 Roundtable, Part 1: 'A World Of Possibilities'",decrease,decrease,2.,53
+379,CTT,20181105,"RBC Capital Upgrades CatchMark Timber Trust to Outperform, Announces $12 Price Target",increase,increase,1.,61
+380,CPRX,20160427,"Director O'Keeffe Buys 20,000 Shares of Catalyst Pharmaceuticals @$0.60/Share -Form 4",decrease,decrease,2.,71
+381,HPJ,20161109,"Highpower International Reports Q3 EPS $0.18 vs. Prior Year Quarter $0.13, Rev. $54.1M vs. Prior Year Quarter $37.6M",increase,decrease,2.,71
+382,MASI,20200122,Stocks That Hit 52-Week Highs On Wednesday,decrease,increase,1.,47
+383,HCA,20170313,"Height Securities Highlights Any Significant Loss In Individual Coverage In GOP Healthcare Bill Likely To Weight On Hospital Names Community Health Systems And HCA Holdings, Medicaid-levered Companies Centene And Molina Healthcare",decrease,increase,1.,81
+384,PKW,20151222,Buybacks Surged In The Third Quarter,increase,decrease,2.,48
+385,ONE,20121011,Morning Market Losers,increase,increase,1.,39
+386,SPLK,20160926,Splunk Offers Upside Of Almost 14%: Vetr,increase,decrease,2.,51
+387,SYNA,20101213,Options Brief: Synaptics Incorporated (SYNA),decrease,increase,1.,52
+388,ABX,20110106,Gold Prices Continue New Year Slide,decrease,decrease,2.,40
+389,REGN,20171002,"Regeneron Reports New Partnerships with HHS to Develop Antibodies Against Ebola, Influenza and Multiple Other Emerging Pathogens",decrease,decrease,2.,68
+390,PAA,20151210,Fast Money Traders Share How Would They Trade The Weakness In Commodity Space,decrease,decrease,2.,55
+391,STR,20150707,Top 4 NYSE Stocks In The Gas Utilities Industry With The Highest Profit Margin,decrease,decrease,2.,52
+392,NWL,20161114,"Worst Performing Industries For November 14, 2016",increase,decrease,2.,48
+393,FLS,20150116,"Susquehanna Initiates Coverage on Flowserve at Neutral, Announces $59.00 PT",decrease,increase,1.,61
+394,SYMC,20110727,Symantec Posts Higher Net Income in First Quarter Earnings,increase,increase,1.,49
+395,GRPN,20111123,Groupon Trading at All-Time Lows; Are Bears Winning the Battle?,decrease,decrease,2.,54
+396,VAR,20160915,Varian Medical Systems Receives FDA 510(k) Clearance For Nexus DR Digital X-Ray Imaging System,increase,decrease,2.,62
+397,LXU,20160510,Mid-Afternoon Market Update: Dow Jumps Over 200 Points; SolarCity Shares Tumble,decrease,decrease,2.,61
+398,EQIX,20101026,"Benzinga's After Hours Gainers (BRCM, FFIV, EQIX, SIMG, MCK)",increase,decrease,2.,69
+399,TW,20130909,UPDATE: Deutsche Bank Raises PT on Towers Watson Following Raised Revenue Estimates,decrease,increase,1.,58
+400,LAND,20170809,Gladstone Land Acquires Vegetable Farm in Florida for $9.7 Million,increase,increase,1.,52
+401,BVSN,20111213,Hearing National Inflation Association Making More Positive Comments in BroadVision,increase,decrease,2.,49
+402,GERN,20131206,Mid-Day Market Update: Ulta Salon Tumbles On Downbeat Results; Finisar Shares Rise,increase,decrease,2.,58
+403,BWEN,20100224,BWEN Initiated With Outperform,increase,increase,1.,47
+404,MRO,20190530,Shares of several oil and gas companies are trading lower after oil prices fell following a report from the USA EIA showing smaller-than-expected crude oil and gas inventory draws.,decrease,decrease,2.,70
+405,BWLD,20171026,"Benzinga's Top Upgrades, Downgrades For October 26, 2017",decrease,increase,1.,56
+406,ZIXI,20190228,"Zix Q4 Adj. EPS $0.09, Inline, Sales $18.448M Beat $18.19M Estimate",increase,decrease,2.,63
+407,TAL,20191010,Shares of many Chinese companies are trading higher on renewed trade optimism after the US was considering suspending tariff increase in exchange for a currency pact. President Trump's administration also plans to allow the sale of some supplies to Huawei.,increase,decrease,2.,82
+408,GOOGL,20180829,"Trump Says Google, Twitter And Facebook Trying To Silence People",increase,increase,1.,52
+409,PPG,20181101,"Deutsche Bank Maintains Buy on PPG Industries, Raises Price Target to $120",decrease,decrease,2.,52
+410,TRN,20150408,Trinity Industris Increases Leasing Warehouse Facility From $475M To $1B,decrease,increase,1.,52
+411,PLT,20150513,Plantronics Announces 2M Share Repurchase Authorization,increase,decrease,2.,50
+412,VVC,20121102,Vectren Raises Qtr. Dividend from $0.35 to $0.355/Share,increase,decrease,2.,55
+413,B,20140527,13G Filing from Gates Capital Mgmt on Barnes Group Just Hitting SEC's EDGAR Site,increase,increase,1.,59
+414,LMAT,20190220,54 Stocks Moving In Wednesday's Mid-Day Session,increase,decrease,2.,52
+415,CCL,20180109,"Benzinga's Top Upgrades, Downgrades For January 9, 2018",increase,increase,1.,48
+416,PGR,20181107,"Morgan Stanley Upgrades Progressive to Overweight, Announces $84 Price Target",increase,decrease,2.,47
+417,NRZ,20141010,UPDATE: Piper Jaffray Initiates Coverage On New Residential Investment Corp. On Differentiated Mortgage REIT,decrease,increase,1.,68
+418,WDAY,20160311,Pacific Crest/Keybanc Negative on Workday,decrease,increase,1.,49
+419,MCO,20110124,Earnings Preview: Quest Diagnostics - Analyst Blog,increase,decrease,2.,47
+420,CSCO,20180205,"The Information Publishes A Speculative Article Titled 'The Four Companies That Should Be on Cisco's Shopping List', FireEye And RedHat Mentioned In Article",increase,increase,1.,80
+421,HELE,20131216,KeyBanc Initiates Coverage on Helen of Troy Limited at Hold,increase,increase,1.,52
+422,FOXA,20150116,Stifel Initiates Coverage On Twenty-First Century Fox On Multiple Positive Factors,increase,increase,1.,55
+423,QQQ,20180822,"Benzinga Pro Mid-Day Price Check For Major Averages: Nasdaq Up 22 (0.3%), Russell 2000 Up 3 (0.2%), S&P 500 Flat,  Dow 30 Down 32 (0.1%)",increase,decrease,2.,85
+424,ALLT,20110118,Wunderlich Raises PT On Allot Communications,decrease,increase,1.,49
+425,AHT,20160125,"Ashford Hospitality Says Not Selling Some Properties as Full Portfolio, Instead Individual Assets",decrease,decrease,2.,54
+426,CECO,20100518,"H-P, Fade to Black (HPQ, CSCO, IBM, DELL)",decrease,decrease,2.,53
+427,OZM,20181228,Och-Ziff Capital Management shares are trading higher after the company on Thursday announced its intention to change its tax classification from partnership to corporation.,increase,decrease,2.,66
+428,REGN,20140327,Market Wrap For March 27: Markets Lower Following Mixed Economic Data,increase,decrease,2.,49
+429,CVS,20190906,'CVS hires Fitbit executive to lead consumer health' -CNBC,decrease,decrease,2.,57
+430,NWN,20120803,Northwest Natural Gas Reports Q2 EPS $0.05 vs $0.16 Est; Revenues $69.5M vs $73.3M Est,decrease,decrease,2.,64
+431,SHLD,20170106,Wall Street's M&A Chatter From January 5,increase,decrease,2.,49
+432,YGE,20151202,"Yingli Reports Q3 Sales $351.5M vs $370.4M Est., Adj. Earnings $(0.37)/ADS",increase,decrease,2.,73
+433,SONC,20150107,Benzinga's Top #PreMarket Gainers,increase,increase,1.,46
+434,RDUS,20170310,Radius Health Receives Notification of PDUFA Extension for Abaloparatide-SC,decrease,decrease,2.,58
+435,RNN,20140924,Rexahn Announces FDA Orphan Drug Designation for RX-3117 for Treatment of Pancreatic Cancer,increase,increase,1.,65
+436,BTU,20130828,"Short Sellers Shy Away From Coal Stocks (ANR, CLD, WLT)",increase,decrease,2.,56
+437,PANL,20121107,Universal Display's Q3 Results Send Stock Into Tailspin,increase,increase,1.,52
+438,DO,20110318,UPDATE: Citigroup Raises PT On Diamond Offshore Drilling To $90,decrease,increase,1.,55
+439,GPRO,20160129,"Top Performing Industries For January 29, 2016",increase,decrease,2.,46
+440,BBBY,20120706,"J.P. Morgan Maintains Bed Bath & Beyond at Neutral, Lowers PT from $74 to $69",increase,decrease,2.,63
+441,X,20181011,"Seaport Global Initiates Coverage On United States Steel with Buy Rating, Announces $35 Price Target",decrease,increase,1.,59
+442,ACXM,20170516,"Earnings Scheduled For May 16, 2017",increase,decrease,2.,51
+443,LEN,20101014,Handling Risk Around General Electric's (NYSE:GE) Earnings Report,decrease,decrease,2.,53
+444,GRMN,20111212,A Peek Into The Market Before The Trading Starts,increase,increase,1.,50
+445,ETN,20100721,Eaton Shares Up 7% On Strong Results (ETN),increase,increase,1.,51
+446,BSX,20100409,Piper Jaffray Maintains Neutral Rating On Boston Scientific Corporation (BSX),decrease,decrease,2.,51
+447,ELY,20150323,"Imperial Capital Upgrades Callaway Golf to Outperform, Raises PT to $12.00",increase,increase,1.,52
+448,HALL,20200306,101 Biggest Movers From Yesterday,increase,decrease,2.,42
+449,KR,20101130,Watch Key Support Levels  11-30-2010,increase,decrease,2.,43
+450,WSM,20101223,"How To Trade Jo-Ann's Buyout (JAS, BBBY, WSM)",decrease,decrease,2.,58
+451,KBSF,20171228,"KBS Fashion Shares Halted On Circuit Breaker, Up 28.6%; BZ NOTE: Issue Has $1.77M Shares Outstanding",decrease,decrease,2.,66
+452,GD,20170905,General Dynamics Receives $311M Contract To Upgrade U.S. Army Tanks,decrease,increase,1.,49
+453,FLO,20130813,"Earnings Scheduled For August 13, 2013",decrease,decrease,2.,44
+454,HTZ,20180731,50 Biggest Movers From Yesterday,decrease,decrease,2.,45
+455,FEIC,20130606,"FEI, University of Oklahoma Announce Research Collaboration Agreement on Oil and Gas Center",increase,decrease,2.,49
+456,CNSL,20171115,Mid-Day Market Update: YY Climbs After Strong Q3 Results; SandRidge Energy Shares Plummet,decrease,decrease,2.,62
+457,EAT,20200311,78 Stocks Moving In Wednesday's Mid-Day Session,increase,decrease,2.,51
+458,BSX,20131119,Boston Scientific Vercise Deep Brain Stimulation System Receives CE Mark Approval,decrease,decrease,2.,51
+459,MAN,20121031,Minneapolis Fed President Kocherlakota Changes His Views on Unemployment,decrease,decrease,2.,48
+460,RLD,20111102,Piper Jaffray Overweight on RealD Ahead of 3Q Earnings Today After Market Close,increase,increase,1.,53
+461,POL,20160203,Here's Why Shares Of Kraton Performance Polymers Gained 10%,increase,decrease,2.,58
+462,DISH,20151105,Dish Spikes Higher on Volume,increase,increase,1.,42
+463,LLTC,20120118,Benzinga's Top Pre-Market Gainers,increase,decrease,2.,44
+464,YHOO,20160503,Yahoo CEO Marissa Mayer Said to be Paying Millions to Retain HR Head Sandy Gould -NY Post,increase,increase,1.,62
+465,AZO,20180917,"The Week Ahead: Alibaba Investor Day, FedEx Earnings, Eventbrite IPO",increase,decrease,2.,55
+466,GRUB,20190730,36 Technology Stocks Moving In Monday's After-Market Session,decrease,decrease,2.,50
+467,PAY,20160606,Expect 'Solid' Q2 Results From Verifone,increase,decrease,2.,49
+468,MMM,20200408,"California To Provide Masks For Grocers, DMV And Homeless Care Workers",increase,increase,1.,49
+469,TLT,20180112,Treasury 2 Year Yield Tops 2%,decrease,increase,1.,46
+470,AXP,20120202,Fast Money Picks For February 3rd,increase,decrease,2.,41
+471,NVO,20200309,52 Healthcare Stocks Moving In Monday's Pre-Market Session,increase,decrease,2.,54
+472,SLCA,20131021,"Wells Fargo Downgrades U.S. Silica Holdings, Inc. to Market Perform",decrease,decrease,2.,65
+473,EVER,20160726,18 Biggest Mid-Day Gainers For Tuesday,decrease,decrease,2.,51
+474,PLUG,20140306,Market Wrap For March 6: Investors Find Positives In Jobless Claims,increase,decrease,2.,52
+475,SWK,20170126,"Stanley Black & Decker Q4 EPS $1.71 vs $1.68 Est, Revenue $2.9B vs $2.9B Est",increase,decrease,2.,70
+476,EMES,20150730,Baird Upgrades Emerge Energy Services to Outperform,decrease,decrease,2.,52
+477,RYU,20160609,"RYU: A High-Flying ETF, Not The Guy From 'Street Fighter'",decrease,decrease,2.,64
+478,PHMD,20170503,20 Biggest Mid-Day Gainers For Wednesday,increase,decrease,2.,43
+479,ETF,20110727,"Benzinga's Top ETF Decliners, July 27th (SOXL, TYH, URTY, DRN)",decrease,decrease,2.,62
+480,HTH,20160331,"FBR Capital Initiates Coverage on Hilltop Holdings at Market Perform, Announces $20.50 PT",decrease,increase,1.,66
+481,ALL,20160930,Barclays Raises Targets On Insurance Stocks Ahead Of Q3 Earnings,increase,increase,1.,52
+482,CP,20161014,Canadian Pacific Announces Will Establish Supply Chain Scorecard,increase,decrease,2.,43
+483,XCO,20100521,Bear Tracks  05-21-2010,decrease,decrease,2.,40
+484,ERX,20101102,"Benzinga's Top ETF Gainers (TNA, LBJ, EDC, ERX)",increase,decrease,2.,64
+485,FMS,20120221,Fresenius Medical Posts 14% Surge In Q4 Net Profit,increase,increase,1.,55
+486,VXX,20100719,"Fast Money Picks For July 20th (LRCX, VIX, PM, GOOG)",decrease,decrease,2.,65
+487,BDX,20180426,"Becton Dickinson S-3 Shows Registration For Mixed Securities Shelf Offering, No Size Disclosed",increase,decrease,2.,63
+488,INN,20160503,Summit Hotel Sees Q2 Adj. FFO $0.39-$0.41 vs $0.38 Est.; Sees FY16 Adj. FFO $1.31-$1.37 vs $1.33 Est.,increase,decrease,2.,84
+489,BKH,20181204,"Stocks Which Set New 52-Week High Yesterday, Mon., Dec. 3, 2018",decrease,increase,1.,51
+490,TRAK,20140219,"DealerTrack Holdings, Inc. Reports Q4 EPS of $0.27, Inline; Revenue of $126.10M vs $126.10M Est",increase,decrease,2.,70
+491,HAL,20141223,Global Hunter Securities Adjusts Coverage On Several Oil & Energy Stocks,decrease,decrease,2.,50
+492,TYC,20141001,Goldman Sachs Initiates Tyco With Neutral,increase,decrease,2.,45
+493,MXIM,20110120,Maxim Reports $613 Million of Revenue for the Second Quarter of Fiscal 2011 (MXIM),increase,decrease,2.,57
+494,ABB,20160421,"Baird Maintains Neutral on ABB, Raises PT to $21.00",decrease,decrease,2.,52
+495,APH,20150414,Tech Preview Ahead Of Earnings: Two Wall Street Firms Weigh In,increase,increase,1.,49
+496,RCII,20120326,"Canaccord Initiates Coverage on Rent-A-Center at Buy, Announces PT of $50",increase,increase,1.,63
+497,TYC,20111116,"Financial Breakfast: Morning News Summary for November 16, 2011",increase,decrease,2.,42
+498,SAIA,20190906,Stocks That Hit 52-Week Highs On Friday,decrease,increase,1.,49
+499,CPAC,20181119,"HSBC Upgrades Cementos Pacasmayo to Buy, Announces $13 Price Target",increase,decrease,2.,67

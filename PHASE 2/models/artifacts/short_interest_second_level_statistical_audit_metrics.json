@@ -1,0 +1,721 @@
+{
+  "audit_title": "Second-Level Statistical Audit and Sensitivity Analysis",
+  "primary_multiple_testing_correction": [
+    {
+      "test_description": "Config 5 vs 2 Full Test Macro-F1",
+      "point_estimate": 0.0057,
+      "headline_clustered": {
+        "ci_95": [
+          0.0003,
+          0.0121
+        ],
+        "raw_p_value": 0.038,
+        "holm_adjusted_p_value": 0.114,
+        "significant_raw": true,
+        "significant_holm": false
+      },
+      "ticker_clustered": {
+        "ci_95": [
+          -0.0017,
+          0.0132
+        ],
+        "raw_p_value": 0.17,
+        "holm_adjusted_p_value": 0.51,
+        "significant_raw": false,
+        "significant_holm": false
+      }
+    },
+    {
+      "test_description": "Config 5 vs 2 Full Test Accuracy",
+      "point_estimate": 0.0248,
+      "headline_clustered": {
+        "ci_95": [
+          0.0195,
+          0.0309
+        ],
+        "raw_p_value": 0.001,
+        "holm_adjusted_p_value": 0.008,
+        "significant_raw": true,
+        "significant_holm": true
+      },
+      "ticker_clustered": {
+        "ci_95": [
+          0.0162,
+          0.0333
+        ],
+        "raw_p_value": 0.001,
+        "holm_adjusted_p_value": 0.008,
+        "significant_raw": true,
+        "significant_holm": true
+      }
+    },
+    {
+      "test_description": "Config 5 vs 2 Novel Cat Macro-F1",
+      "point_estimate": 0.0137,
+      "headline_clustered": {
+        "ci_95": [
+          0.0085,
+          0.0194
+        ],
+        "raw_p_value": 0.001,
+        "holm_adjusted_p_value": 0.008,
+        "significant_raw": true,
+        "significant_holm": true
+      },
+      "ticker_clustered": {
+        "ci_95": [
+          0.0041,
+          0.0238
+        ],
+        "raw_p_value": 0.012,
+        "holm_adjusted_p_value": 0.06,
+        "significant_raw": true,
+        "significant_holm": false
+      }
+    },
+    {
+      "test_description": "Config 5 vs 2 Novel Cat Accuracy",
+      "point_estimate": 0.0182,
+      "headline_clustered": {
+        "ci_95": [
+          0.0129,
+          0.0239
+        ],
+        "raw_p_value": 0.001,
+        "holm_adjusted_p_value": 0.008,
+        "significant_raw": true,
+        "significant_holm": true
+      },
+      "ticker_clustered": {
+        "ci_95": [
+          0.0082,
+          0.0292
+        ],
+        "raw_p_value": 0.001,
+        "holm_adjusted_p_value": 0.008,
+        "significant_raw": true,
+        "significant_holm": true
+      }
+    },
+    {
+      "test_description": "Config 5 vs 6 Full Test Macro-F1",
+      "point_estimate": 0.0017,
+      "headline_clustered": {
+        "ci_95": [
+          -0.0014,
+          0.0044
+        ],
+        "raw_p_value": 0.228,
+        "holm_adjusted_p_value": 0.456,
+        "significant_raw": false,
+        "significant_holm": false
+      },
+      "ticker_clustered": {
+        "ci_95": [
+          -0.0008,
+          0.0046
+        ],
+        "raw_p_value": 0.222,
+        "holm_adjusted_p_value": 0.51,
+        "significant_raw": false,
+        "significant_holm": false
+      }
+    },
+    {
+      "test_description": "Config 5 vs 6 Full Test Accuracy",
+      "point_estimate": -0.0001,
+      "headline_clustered": {
+        "ci_95": [
+          -0.002,
+          0.0018
+        ],
+        "raw_p_value": 0.974,
+        "holm_adjusted_p_value": 0.974,
+        "significant_raw": false,
+        "significant_holm": false
+      },
+      "ticker_clustered": {
+        "ci_95": [
+          -0.0023,
+          0.0023
+        ],
+        "raw_p_value": 0.964,
+        "holm_adjusted_p_value": 0.964,
+        "significant_raw": false,
+        "significant_holm": false
+      }
+    },
+    {
+      "test_description": "Config 5 vs 6 Novel Cat Macro-F1",
+      "point_estimate": 0.0046,
+      "headline_clustered": {
+        "ci_95": [
+          0.0013,
+          0.0082
+        ],
+        "raw_p_value": 0.006,
+        "holm_adjusted_p_value": 0.024,
+        "significant_raw": true,
+        "significant_holm": true
+      },
+      "ticker_clustered": {
+        "ci_95": [
+          0.0005,
+          0.0091
+        ],
+        "raw_p_value": 0.026,
+        "holm_adjusted_p_value": 0.104,
+        "significant_raw": true,
+        "significant_holm": false
+      }
+    },
+    {
+      "test_description": "Config 5 vs 6 Novel Cat Accuracy",
+      "point_estimate": 0.0058,
+      "headline_clustered": {
+        "ci_95": [
+          0.0026,
+          0.0092
+        ],
+        "raw_p_value": 0.001,
+        "holm_adjusted_p_value": 0.008,
+        "significant_raw": true,
+        "significant_holm": true
+      },
+      "ticker_clustered": {
+        "ci_95": [
+          0.0019,
+          0.0101
+        ],
+        "raw_p_value": 0.006,
+        "holm_adjusted_p_value": 0.036,
+        "significant_raw": true,
+        "significant_holm": true
+      }
+    }
+  ],
+  "dual_cluster_bootstrap_comparisons": {
+    "config_5_vs_config_2_full_test": {
+      "headline_clustered": {
+        "n_samples": 66578,
+        "n_clusters": 30780,
+        "n_bootstrap": 1000,
+        "accuracy_diff": {
+          "point_estimate": 0.0248,
+          "bootstrap_mean": 0.0249,
+          "std_error": 0.0029,
+          "ci_95_lower": 0.0195,
+          "ci_95_upper": 0.0309,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        },
+        "macro_f1_diff": {
+          "point_estimate": 0.0057,
+          "bootstrap_mean": 0.0059,
+          "std_error": 0.0029,
+          "ci_95_lower": 0.0003,
+          "ci_95_upper": 0.0121,
+          "statistically_significant": true,
+          "p_value_empirical": 0.038
+        },
+        "per_class_f1_diff": {
+          "decrease": {
+            "point_estimate": -0.0531,
+            "bootstrap_mean": -0.0531,
+            "std_error": 0.0051,
+            "ci_95_lower": -0.0628,
+            "ci_95_upper": -0.0429,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          },
+          "increase": {
+            "point_estimate": 0.0539,
+            "bootstrap_mean": 0.0547,
+            "std_error": 0.0075,
+            "ci_95_lower": 0.0406,
+            "ci_95_upper": 0.0695,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          },
+          "no_significant_change": {
+            "point_estimate": 0.0162,
+            "bootstrap_mean": 0.0162,
+            "std_error": 0.0037,
+            "ci_95_lower": 0.0088,
+            "ci_95_upper": 0.0232,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          }
+        }
+      },
+      "ticker_clustered": {
+        "n_samples": 66578,
+        "n_clusters": 3379,
+        "n_bootstrap": 1000,
+        "accuracy_diff": {
+          "point_estimate": 0.0248,
+          "bootstrap_mean": 0.0248,
+          "std_error": 0.0046,
+          "ci_95_lower": 0.0162,
+          "ci_95_upper": 0.0333,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        },
+        "macro_f1_diff": {
+          "point_estimate": 0.0057,
+          "bootstrap_mean": 0.0056,
+          "std_error": 0.004,
+          "ci_95_lower": -0.0017,
+          "ci_95_upper": 0.0132,
+          "statistically_significant": false,
+          "p_value_empirical": 0.17
+        },
+        "per_class_f1_diff": {
+          "decrease": {
+            "point_estimate": -0.0531,
+            "bootstrap_mean": -0.0533,
+            "std_error": 0.0056,
+            "ci_95_lower": -0.0646,
+            "ci_95_upper": -0.0434,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          },
+          "increase": {
+            "point_estimate": 0.0539,
+            "bootstrap_mean": 0.054,
+            "std_error": 0.0064,
+            "ci_95_lower": 0.0417,
+            "ci_95_upper": 0.0663,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          },
+          "no_significant_change": {
+            "point_estimate": 0.0162,
+            "bootstrap_mean": 0.0162,
+            "std_error": 0.0091,
+            "ci_95_lower": -0.0007,
+            "ci_95_upper": 0.0346,
+            "statistically_significant": false,
+            "p_value_empirical": 0.064
+          }
+        }
+      }
+    },
+    "config_5_vs_config_6_full_test": {
+      "headline_clustered": {
+        "n_samples": 66578,
+        "n_clusters": 30780,
+        "n_bootstrap": 1000,
+        "accuracy_diff": {
+          "point_estimate": -0.0001,
+          "bootstrap_mean": -0.0001,
+          "std_error": 0.001,
+          "ci_95_lower": -0.002,
+          "ci_95_upper": 0.0018,
+          "statistically_significant": false,
+          "p_value_empirical": 0.974
+        },
+        "macro_f1_diff": {
+          "point_estimate": 0.0017,
+          "bootstrap_mean": 0.0018,
+          "std_error": 0.0015,
+          "ci_95_lower": -0.0014,
+          "ci_95_upper": 0.0044,
+          "statistically_significant": false,
+          "p_value_empirical": 0.228
+        },
+        "per_class_f1_diff": {
+          "decrease": {
+            "point_estimate": 0.0029,
+            "bootstrap_mean": 0.0031,
+            "std_error": 0.0046,
+            "ci_95_lower": -0.0073,
+            "ci_95_upper": 0.0112,
+            "statistically_significant": false,
+            "p_value_empirical": 0.466
+          },
+          "increase": {
+            "point_estimate": -0.0022,
+            "bootstrap_mean": -0.0022,
+            "std_error": 0.0013,
+            "ci_95_lower": -0.0049,
+            "ci_95_upper": 0.0002,
+            "statistically_significant": false,
+            "p_value_empirical": 0.082
+          },
+          "no_significant_change": {
+            "point_estimate": 0.0045,
+            "bootstrap_mean": 0.0045,
+            "std_error": 0.0016,
+            "ci_95_lower": 0.0014,
+            "ci_95_upper": 0.0075,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          }
+        }
+      },
+      "ticker_clustered": {
+        "n_samples": 66578,
+        "n_clusters": 3379,
+        "n_bootstrap": 1000,
+        "accuracy_diff": {
+          "point_estimate": -0.0001,
+          "bootstrap_mean": -0.0001,
+          "std_error": 0.0012,
+          "ci_95_lower": -0.0023,
+          "ci_95_upper": 0.0023,
+          "statistically_significant": false,
+          "p_value_empirical": 0.964
+        },
+        "macro_f1_diff": {
+          "point_estimate": 0.0017,
+          "bootstrap_mean": 0.0017,
+          "std_error": 0.0014,
+          "ci_95_lower": -0.0008,
+          "ci_95_upper": 0.0046,
+          "statistically_significant": false,
+          "p_value_empirical": 0.222
+        },
+        "per_class_f1_diff": {
+          "decrease": {
+            "point_estimate": 0.0029,
+            "bootstrap_mean": 0.0029,
+            "std_error": 0.0029,
+            "ci_95_lower": -0.0025,
+            "ci_95_upper": 0.0086,
+            "statistically_significant": false,
+            "p_value_empirical": 0.33
+          },
+          "increase": {
+            "point_estimate": -0.0022,
+            "bootstrap_mean": -0.0021,
+            "std_error": 0.0013,
+            "ci_95_lower": -0.0047,
+            "ci_95_upper": 0.0005,
+            "statistically_significant": false,
+            "p_value_empirical": 0.116
+          },
+          "no_significant_change": {
+            "point_estimate": 0.0045,
+            "bootstrap_mean": 0.0044,
+            "std_error": 0.0017,
+            "ci_95_lower": 0.0009,
+            "ci_95_upper": 0.0076,
+            "statistically_significant": true,
+            "p_value_empirical": 0.008
+          }
+        }
+      }
+    },
+    "config_5_vs_config_2_novel_catalysts": {
+      "headline_clustered": {
+        "n_samples": 27018,
+        "n_clusters": 26853,
+        "n_bootstrap": 1000,
+        "accuracy_diff": {
+          "point_estimate": 0.0182,
+          "bootstrap_mean": 0.0182,
+          "std_error": 0.0028,
+          "ci_95_lower": 0.0129,
+          "ci_95_upper": 0.0239,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        },
+        "macro_f1_diff": {
+          "point_estimate": 0.0137,
+          "bootstrap_mean": 0.0137,
+          "std_error": 0.0028,
+          "ci_95_lower": 0.0085,
+          "ci_95_upper": 0.0194,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        },
+        "per_class_f1_diff": {
+          "decrease": {
+            "point_estimate": -0.0512,
+            "bootstrap_mean": -0.0513,
+            "std_error": 0.004,
+            "ci_95_lower": -0.0594,
+            "ci_95_upper": -0.0434,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          },
+          "increase": {
+            "point_estimate": 0.0718,
+            "bootstrap_mean": 0.0719,
+            "std_error": 0.0047,
+            "ci_95_lower": 0.0626,
+            "ci_95_upper": 0.0806,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          },
+          "no_significant_change": {
+            "point_estimate": 0.0204,
+            "bootstrap_mean": 0.0204,
+            "std_error": 0.0041,
+            "ci_95_lower": 0.0126,
+            "ci_95_upper": 0.0282,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          }
+        }
+      },
+      "ticker_clustered": {
+        "n_samples": 27018,
+        "n_clusters": 2815,
+        "n_bootstrap": 1000,
+        "accuracy_diff": {
+          "point_estimate": 0.0182,
+          "bootstrap_mean": 0.0183,
+          "std_error": 0.0054,
+          "ci_95_lower": 0.0082,
+          "ci_95_upper": 0.0292,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        },
+        "macro_f1_diff": {
+          "point_estimate": 0.0137,
+          "bootstrap_mean": 0.0138,
+          "std_error": 0.0051,
+          "ci_95_lower": 0.0041,
+          "ci_95_upper": 0.0238,
+          "statistically_significant": true,
+          "p_value_empirical": 0.012
+        },
+        "per_class_f1_diff": {
+          "decrease": {
+            "point_estimate": -0.0512,
+            "bootstrap_mean": -0.051,
+            "std_error": 0.0074,
+            "ci_95_lower": -0.0666,
+            "ci_95_upper": -0.0373,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          },
+          "increase": {
+            "point_estimate": 0.0718,
+            "bootstrap_mean": 0.0721,
+            "std_error": 0.0105,
+            "ci_95_lower": 0.0515,
+            "ci_95_upper": 0.0916,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          },
+          "no_significant_change": {
+            "point_estimate": 0.0204,
+            "bootstrap_mean": 0.0204,
+            "std_error": 0.0097,
+            "ci_95_lower": 0.0024,
+            "ci_95_upper": 0.0397,
+            "statistically_significant": true,
+            "p_value_empirical": 0.026
+          }
+        }
+      }
+    },
+    "config_5_vs_config_6_novel_catalysts": {
+      "headline_clustered": {
+        "n_samples": 27018,
+        "n_clusters": 26853,
+        "n_bootstrap": 1000,
+        "accuracy_diff": {
+          "point_estimate": 0.0058,
+          "bootstrap_mean": 0.0058,
+          "std_error": 0.0017,
+          "ci_95_lower": 0.0026,
+          "ci_95_upper": 0.0092,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        },
+        "macro_f1_diff": {
+          "point_estimate": 0.0046,
+          "bootstrap_mean": 0.0047,
+          "std_error": 0.0017,
+          "ci_95_lower": 0.0013,
+          "ci_95_upper": 0.0082,
+          "statistically_significant": true,
+          "p_value_empirical": 0.006
+        },
+        "per_class_f1_diff": {
+          "decrease": {
+            "point_estimate": -0.0008,
+            "bootstrap_mean": -0.0007,
+            "std_error": 0.0033,
+            "ci_95_lower": -0.0069,
+            "ci_95_upper": 0.0058,
+            "statistically_significant": false,
+            "p_value_empirical": 0.846
+          },
+          "increase": {
+            "point_estimate": 0.0146,
+            "bootstrap_mean": 0.0147,
+            "std_error": 0.0024,
+            "ci_95_lower": 0.0101,
+            "ci_95_upper": 0.0196,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          },
+          "no_significant_change": {
+            "point_estimate": 0.0001,
+            "bootstrap_mean": 0.0001,
+            "std_error": 0.0019,
+            "ci_95_lower": -0.0037,
+            "ci_95_upper": 0.0036,
+            "statistically_significant": false,
+            "p_value_empirical": 0.95
+          }
+        }
+      },
+      "ticker_clustered": {
+        "n_samples": 27018,
+        "n_clusters": 2815,
+        "n_bootstrap": 1000,
+        "accuracy_diff": {
+          "point_estimate": 0.0058,
+          "bootstrap_mean": 0.0058,
+          "std_error": 0.0021,
+          "ci_95_lower": 0.0019,
+          "ci_95_upper": 0.0101,
+          "statistically_significant": true,
+          "p_value_empirical": 0.006
+        },
+        "macro_f1_diff": {
+          "point_estimate": 0.0046,
+          "bootstrap_mean": 0.0047,
+          "std_error": 0.0022,
+          "ci_95_lower": 0.0005,
+          "ci_95_upper": 0.0091,
+          "statistically_significant": true,
+          "p_value_empirical": 0.026
+        },
+        "per_class_f1_diff": {
+          "decrease": {
+            "point_estimate": -0.0008,
+            "bootstrap_mean": -0.0007,
+            "std_error": 0.0043,
+            "ci_95_lower": -0.0092,
+            "ci_95_upper": 0.0082,
+            "statistically_significant": false,
+            "p_value_empirical": 0.86
+          },
+          "increase": {
+            "point_estimate": 0.0146,
+            "bootstrap_mean": 0.0148,
+            "std_error": 0.0029,
+            "ci_95_lower": 0.0095,
+            "ci_95_upper": 0.0204,
+            "statistically_significant": true,
+            "p_value_empirical": 0.001
+          },
+          "no_significant_change": {
+            "point_estimate": 0.0001,
+            "bootstrap_mean": 0.0001,
+            "std_error": 0.0023,
+            "ci_95_lower": -0.0045,
+            "ci_95_upper": 0.0045,
+            "statistically_significant": false,
+            "p_value_empirical": 0.974
+          }
+        }
+      }
+    }
+  },
+  "top_20_ticker_investigation": {
+    "top_20_tickers": [
+      "TSLA",
+      "FXI",
+      "AAPL",
+      "FB",
+      "GILD",
+      "AMZN",
+      "UAL",
+      "DAL",
+      "GOOGL",
+      "GOOG",
+      "NFLX",
+      "LUV",
+      "INO",
+      "CCL",
+      "F",
+      "NVAX",
+      "EWU",
+      "SBUX",
+      "RSX",
+      "HTZ"
+    ],
+    "sample_size": 5842,
+    "tail_sample_size": 60736,
+    "short_interest_before_scale": {
+      "top_20_mean": 25512692.33,
+      "top_20_median": 20097889.0,
+      "top_20_p90": 40007278.0,
+      "tail_mean": 11389573.84,
+      "tail_median": 4998500.5,
+      "tail_p90": 26411548.0,
+      "median_ratio_top_vs_tail": 4.02
+    },
+    "true_class_distribution": {
+      "top_20": {
+        "increase": 0.4243,
+        "decrease": 0.3595,
+        "no_significant_change": 0.2162
+      },
+      "tail": {
+        "increase": 0.4274,
+        "decrease": 0.3682,
+        "no_significant_change": 0.2043
+      }
+    },
+    "predicted_class_distribution_top_20": {
+      "config_2_headline_only": {
+        "no_significant_change": 0.404,
+        "increase": 0.3069,
+        "decrease": 0.2891
+      },
+      "config_5_headline_baseline": {
+        "no_significant_change": 0.6438,
+        "increase": 0.2246,
+        "decrease": 0.1316
+      },
+      "config_6_full_features": {
+        "no_significant_change": 0.6664,
+        "increase": 0.2479,
+        "decrease": 0.0858
+      }
+    },
+    "diagnosis": "Top-20 mega-cap equities carry 4.02x higher median absolute short interest (20.1M shares vs. 5.0M shares) due to immense share float. In linear models without float-normalized ratios, extreme raw share volumes overpower headline text and artificially skew predictions toward 'no_significant_change' (64.38% predicted rate vs. 21.62% actual rate). Config 2 (pure text) ignores float volume and thus maintains balanced predictions across mega-caps."
+  },
+  "event_count_reconciliation": {
+    "filter_1_single_ticker_events": {
+      "definition": "(is_multi_ticker == False) & (headline_ticker_count <= 1)",
+      "count": 27114,
+      "description": "All events referencing at most one ticker, irrespective of whether the headline was previously seen in Train."
+    },
+    "filter_2_novel_corporate_catalysts": {
+      "definition": "filter_1 & (~title.isin(train_titles))",
+      "count": 27018,
+      "description": "Single-ticker events whose headline string was never observed in the chronological training partition."
+    },
+    "reconciliation_difference": {
+      "count": 96,
+      "explanation": "Exactly 96 test events met the single-ticker criteria but contained headline titles previously seen in Train (e.g., standard brokerage ratings such as 'DZ Bank Upgrades American Express to Buy' or recurring buyback notices). Filter 1 includes these 96 events; Filter 2 strictly purges them to guarantee 100% novel headline evaluation.",
+      "sample_overlapping_titles": {
+        "Deutsche Bank Maintains Hold on KKR & Co, Lowers Price Target to $27": 2,
+        "Enphase Energy shares are trading higher after the company reported better-than-expected Q1 EPS and sales results.": 2,
+        "Heico shares are trading higher after the company reported better-than-expected Q2 EPS and sales results.": 2,
+        "Monness Crespi Hardt Upgrades Archer-Daniels Midland to Neutral": 1,
+        "DZ Bank Upgrades American Express to Buy": 1
+      }
+    }
+  },
+  "environment": {
+    "python_version": "3.14.2",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "scikit_learn_version": "1.9.1",
+    "pandas_version": "3.1.0",
+    "numpy_version": "2.5.4",
+    "joblib_version": "1.6.0",
+    "random_seed": 42,
+    "bootstrap_iterations": 1000
+  }
+}

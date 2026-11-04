@@ -1,0 +1,87 @@
+{
+  "paper": "Xiao, Cui, Mai, Xu, Li. Short Interest Trend Prediction with Large Language Models. ICIAI 2024. doi:10.1145/3655497.3655500",
+  "run_date": "2026-10-14",
+  "model": {
+    "name": "google/flan-t5-large",
+    "parameters": "780M",
+    "precision": "float32",
+    "quantization": "none",
+    "paper_models_not_run_here": [
+      "google/flan-t5-xxl",
+      "google/flan-ul2",
+      "meta-llama/Llama-2-7b-chat-hf"
+    ]
+  },
+  "hardware": "2 CPU cores, no GPU",
+  "software": {
+    "transformers": "5.19.0",
+    "torch": "2.14.1+cpu",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.5"
+  },
+  "random_seed": 42,
+  "dataset_sources": {
+    "news_titles": "Kaggle dataset miguelaenlle/massive-stock-news-analysis-db-for-nlpbacktests ('Daily Financial News for 6000+ Stocks', CC0), file analyst_ratings_processed.csv (Benzinga headlines)",
+    "label_set_A": "FINRA Reg SHO Daily Short Sale Volume files, https://cdn.finra.org/equity/regsho/daily/ (FNSQ, FNYX, FNQC, FNRA), 2009-08-03 to 2020-07-15",
+    "label_set_B": "FINRA consolidated short interest, https://cdn.finra.org/equity/otcmarket/biweekly/, settlement dates 2017-12-29 to 2020-08-31, exchange-listed only"
+  },
+  "preprocessing": "ASCII-only titles; 1-50 tokens (google/flan-t5-base tokenizer); exact duplicate (title, ticker, date) rows removed; news date = US/Eastern calendar date; company name = FINRA issue name if available, else ticker",
+  "label_sets": {
+    "regsho_volume": {
+      "n_labeled": 1313978,
+      "n_train": 1051182,
+      "n_test_full": 262796,
+      "n_test_evaluated": 500,
+      "increase_share": 0.5573,
+      "definition": "A: paper-faithful; sign of change in FINRA daily short-sale VOLUME (t+1 vs t-1)"
+    },
+    "short_interest": {
+      "n_labeled": 372512,
+      "n_train": 298009,
+      "n_test_full": 74503,
+      "n_test_evaluated": 500,
+      "increase_share": 0.5189,
+      "definition": "B: true short interest; sign of change between FINRA bi-monthly short-interest reports"
+    }
+  },
+  "split": "stratified 80/20 train/test (sklearn train_test_split, random_state=42); evaluation sample = stratified 500 titles from the test split (random_state=42), identical across shot settings",
+  "prompt": {
+    "template": "Read the news title below and determine how the short interest of {company} changes.\n\n{title}\n\nOPTIONS:\n1. increase\n2. decrease\n\nANSWER:",
+    "source": "paper Figure 4",
+    "shots": [
+      0,
+      1,
+      5,
+      10
+    ],
+    "demonstrations": "drawn at random from the training split without replacement, fixed per test title (numpy seed 42*1000003 + index); each = template + ' <gold label>'; joined with blank lines"
+  },
+  "inference": {
+    "scoring": "generate",
+    "decoding": "greedy (do_sample=False), max_new_tokens=5",
+    "max_input_tokens": 2048,
+    "truncation_side": "left",
+    "batch_size": 8,
+    "parsing": "earliest of 'increase', 'decrease', '1.', '2.' in the lowercased output; none found = invalid (counted as wrong)"
+  },
+  "metrics": "sklearn f1_score with labels=[increase, decrease]: per-class F1, support-weighted F1, macro F1; 95% CI = 2000 bootstrap resamples of the 500 titles",
+  "baselines": {
+    "majority": "always predict the training majority class ('increase')",
+    "random": "predict 'increase' with probability = training share of 'increase' (numpy seed 42)",
+    "tfidf_logreg": "TfidfVectorizer(ngram_range=(1,2), min_df=3, max_features=500000, sublinear_tf=True) + LogisticRegression(C=1, class_weight='balanced', solver='liblinear'), titles only"
+  },
+  "status": {
+    "regsho_volume": {
+      "0-shot": "complete",
+      "1-shot": "complete",
+      "5-shot": "complete",
+      "10-shot": "complete"
+    },
+    "short_interest": {
+      "0-shot": "complete",
+      "1-shot": "complete",
+      "5-shot": "complete",
+      "10-shot": "complete"
+    }
+  }
+}

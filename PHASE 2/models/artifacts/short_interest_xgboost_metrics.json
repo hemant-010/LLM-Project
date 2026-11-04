@@ -1,0 +1,485 @@
+{
+  "model_type": "XGBClassifier",
+  "features": {
+    "categorical": [
+      "event_type",
+      "event_category",
+      "event_severity",
+      "insider_role",
+      "transaction_code",
+      "is_multi_ticker"
+    ],
+    "numerical": [
+      "percentage_holdings_sold",
+      "transaction_value",
+      "event_classification_confidence",
+      "n_tokens",
+      "headline_ticker_count",
+      "short_interest_before"
+    ],
+    "total_features": 12,
+    "transformed_dim": 32
+  },
+  "best_hyperparameters": {
+    "max_depth": 7,
+    "learning_rate": 0.05,
+    "n_estimators": 150,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "weight": "balanced"
+  },
+  "validation_tuning_results": [
+    {
+      "config": {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "n_estimators": 100,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": "balanced"
+      },
+      "val_accuracy": 0.3559,
+      "val_macro_f1": 0.329,
+      "val_weighted_f1": 0.3219,
+      "val_balanced_accuracy": 0.3881,
+      "fit_time_seconds": 1.4
+    },
+    {
+      "config": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "n_estimators": 100,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": "balanced"
+      },
+      "val_accuracy": 0.3551,
+      "val_macro_f1": 0.3319,
+      "val_weighted_f1": 0.3252,
+      "val_balanced_accuracy": 0.3867,
+      "fit_time_seconds": 1.49
+    },
+    {
+      "config": {
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "n_estimators": 100,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": "balanced"
+      },
+      "val_accuracy": 0.3522,
+      "val_macro_f1": 0.3371,
+      "val_weighted_f1": 0.3318,
+      "val_balanced_accuracy": 0.3808,
+      "fit_time_seconds": 1.79
+    },
+    {
+      "config": {
+        "max_depth": 7,
+        "learning_rate": 0.05,
+        "n_estimators": 150,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": "balanced"
+      },
+      "val_accuracy": 0.3532,
+      "val_macro_f1": 0.3447,
+      "val_weighted_f1": 0.3415,
+      "val_balanced_accuracy": 0.3765,
+      "fit_time_seconds": 2.4
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "learning_rate": 0.03,
+        "n_estimators": 150,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": "balanced"
+      },
+      "val_accuracy": 0.3523,
+      "val_macro_f1": 0.3433,
+      "val_weighted_f1": 0.3397,
+      "val_balanced_accuracy": 0.3766,
+      "fit_time_seconds": 2.8
+    },
+    {
+      "config": {
+        "max_depth": 6,
+        "learning_rate": 0.08,
+        "n_estimators": 120,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": "balanced"
+      },
+      "val_accuracy": 0.3517,
+      "val_macro_f1": 0.342,
+      "val_weighted_f1": 0.3384,
+      "val_balanced_accuracy": 0.3758,
+      "fit_time_seconds": 1.87
+    },
+    {
+      "config": {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "n_estimators": 100,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": "balanced"
+      },
+      "val_accuracy": 0.3545,
+      "val_macro_f1": 0.3353,
+      "val_weighted_f1": 0.3296,
+      "val_balanced_accuracy": 0.3832,
+      "fit_time_seconds": 1.51
+    },
+    {
+      "config": {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "n_estimators": 100,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": null
+      },
+      "val_accuracy": 0.4159,
+      "val_macro_f1": 0.3164,
+      "val_weighted_f1": 0.3471,
+      "val_balanced_accuracy": 0.373,
+      "fit_time_seconds": 1.38
+    },
+    {
+      "config": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "n_estimators": 100,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": null
+      },
+      "val_accuracy": 0.416,
+      "val_macro_f1": 0.3191,
+      "val_weighted_f1": 0.3497,
+      "val_balanced_accuracy": 0.3735,
+      "fit_time_seconds": 1.52
+    },
+    {
+      "config": {
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "n_estimators": 100,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": null
+      },
+      "val_accuracy": 0.4139,
+      "val_macro_f1": 0.3276,
+      "val_weighted_f1": 0.3561,
+      "val_balanced_accuracy": 0.3736,
+      "fit_time_seconds": 1.75
+    },
+    {
+      "config": {
+        "max_depth": 7,
+        "learning_rate": 0.05,
+        "n_estimators": 150,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": null
+      },
+      "val_accuracy": 0.4099,
+      "val_macro_f1": 0.3392,
+      "val_weighted_f1": 0.3654,
+      "val_balanced_accuracy": 0.3728,
+      "fit_time_seconds": 2.41
+    },
+    {
+      "config": {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "n_estimators": 100,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "weight": null
+      },
+      "val_accuracy": 0.4147,
+      "val_macro_f1": 0.3316,
+      "val_weighted_f1": 0.3593,
+      "val_balanced_accuracy": 0.3751,
+      "fit_time_seconds": 1.68
+    }
+  ],
+  "xgboost_metrics": {
+    "train": {
+      "accuracy": 0.4043,
+      "macro_f1": 0.3976,
+      "weighted_f1": 0.396,
+      "balanced_accuracy": 0.4264,
+      "per_class": {
+        "decrease": {
+          "precision": 0.451,
+          "recall": 0.2481,
+          "f1": 0.3201,
+          "support": 91458
+        },
+        "increase": {
+          "precision": 0.5035,
+          "recall": 0.3941,
+          "f1": 0.4422,
+          "support": 101135
+        },
+        "no_significant_change": {
+          "precision": 0.3251,
+          "recall": 0.6371,
+          "f1": 0.4305,
+          "support": 65758
+        }
+      },
+      "confusion_matrix_raw": [
+        [
+          22689,
+          25308,
+          43461
+        ],
+        [
+          17746,
+          39858,
+          43531
+        ],
+        [
+          9871,
+          13990,
+          41897
+        ]
+      ],
+      "confusion_matrix_normalized": [
+        [
+          0.2481,
+          0.2767,
+          0.4752
+        ],
+        [
+          0.1755,
+          0.3941,
+          0.4304
+        ],
+        [
+          0.1501,
+          0.2127,
+          0.6371
+        ]
+      ],
+      "classes": [
+        "decrease",
+        "increase",
+        "no_significant_change"
+      ]
+    },
+    "val": {
+      "accuracy": 0.3532,
+      "macro_f1": 0.3447,
+      "weighted_f1": 0.3415,
+      "balanced_accuracy": 0.3765,
+      "per_class": {
+        "decrease": {
+          "precision": 0.3312,
+          "recall": 0.174,
+          "f1": 0.2281,
+          "support": 16277
+        },
+        "increase": {
+          "precision": 0.4971,
+          "recall": 0.3662,
+          "f1": 0.4217,
+          "support": 16911
+        },
+        "no_significant_change": {
+          "precision": 0.2852,
+          "recall": 0.5893,
+          "f1": 0.3843,
+          "support": 11418
+        }
+      },
+      "confusion_matrix_raw": [
+        [
+          2832,
+          3982,
+          9463
+        ],
+        [
+          3313,
+          6193,
+          7405
+        ],
+        [
+          2406,
+          2283,
+          6729
+        ]
+      ],
+      "confusion_matrix_normalized": [
+        [
+          0.174,
+          0.2446,
+          0.5814
+        ],
+        [
+          0.1959,
+          0.3662,
+          0.4379
+        ],
+        [
+          0.2107,
+          0.1999,
+          0.5893
+        ]
+      ],
+      "classes": [
+        "decrease",
+        "increase",
+        "no_significant_change"
+      ]
+    },
+    "test_full": {
+      "accuracy": 0.3263,
+      "macro_f1": 0.3195,
+      "weighted_f1": 0.3213,
+      "balanced_accuracy": 0.3692,
+      "per_class": {
+        "decrease": {
+          "precision": 0.3651,
+          "recall": 0.1752,
+          "f1": 0.2368,
+          "support": 24466
+        },
+        "increase": {
+          "precision": 0.4983,
+          "recall": 0.3177,
+          "f1": 0.388,
+          "support": 28440
+        },
+        "no_significant_change": {
+          "precision": 0.229,
+          "recall": 0.6149,
+          "f1": 0.3337,
+          "support": 13672
+        }
+      },
+      "confusion_matrix_raw": [
+        [
+          4286,
+          6166,
+          14014
+        ],
+        [
+          5117,
+          9034,
+          14289
+        ],
+        [
+          2336,
+          2929,
+          8407
+        ]
+      ],
+      "confusion_matrix_normalized": [
+        [
+          0.1752,
+          0.252,
+          0.5728
+        ],
+        [
+          0.1799,
+          0.3177,
+          0.5024
+        ],
+        [
+          0.1709,
+          0.2142,
+          0.6149
+        ]
+      ],
+      "classes": [
+        "decrease",
+        "increase",
+        "no_significant_change"
+      ]
+    },
+    "test_novel_catalysts": {
+      "accuracy": 0.3119,
+      "macro_f1": 0.3069,
+      "weighted_f1": 0.3003,
+      "balanced_accuracy": 0.3595,
+      "per_class": {
+        "decrease": {
+          "precision": 0.3632,
+          "recall": 0.2072,
+          "f1": 0.2638,
+          "support": 10060
+        },
+        "increase": {
+          "precision": 0.4687,
+          "recall": 0.2272,
+          "f1": 0.3061,
+          "support": 10988
+        },
+        "no_significant_change": {
+          "precision": 0.2411,
+          "recall": 0.6442,
+          "f1": 0.3509,
+          "support": 5970
+        }
+      },
+      "confusion_matrix_raw": [
+        [
+          2084,
+          1883,
+          6093
+        ],
+        [
+          2477,
+          2497,
+          6014
+        ],
+        [
+          1177,
+          947,
+          3846
+        ]
+      ],
+      "confusion_matrix_normalized": [
+        [
+          0.2072,
+          0.1872,
+          0.6057
+        ],
+        [
+          0.2254,
+          0.2272,
+          0.5473
+        ],
+        [
+          0.1972,
+          0.1586,
+          0.6442
+        ]
+      ],
+      "classes": [
+        "decrease",
+        "increase",
+        "no_significant_change"
+      ]
+    }
+  },
+  "environment": {
+    "python_version": "3.14.2",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "xgboost_version": "3.4.1",
+    "scikit_learn_version": "1.9.1",
+    "pandas_version": "3.1.0",
+    "numpy_version": "2.5.4",
+    "joblib_version": "1.6.0",
+    "random_seed": 42
+  }
+}

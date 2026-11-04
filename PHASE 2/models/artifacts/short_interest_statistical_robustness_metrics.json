@@ -1,0 +1,361 @@
+{
+  "analysis_title": "Statistical Significance and Robustness Analysis of Feature Ablations",
+  "methodology": "Paired Cluster-Bootstrap (Resampling at Unique Headline Level)",
+  "comparisons": {
+    "config_5_vs_config_2_full_test": {
+      "n_samples": 66578,
+      "n_clusters": 30780,
+      "n_bootstrap": 1000,
+      "accuracy_diff": {
+        "point_estimate": 0.0248,
+        "bootstrap_mean": 0.0249,
+        "std_error": 0.0029,
+        "ci_95_lower": 0.0195,
+        "ci_95_upper": 0.0309,
+        "statistically_significant": true,
+        "p_value_empirical": 0.001
+      },
+      "macro_f1_diff": {
+        "point_estimate": 0.0057,
+        "bootstrap_mean": 0.0059,
+        "std_error": 0.0029,
+        "ci_95_lower": 0.0003,
+        "ci_95_upper": 0.0121,
+        "statistically_significant": true,
+        "p_value_empirical": 0.038
+      },
+      "per_class_f1_diff": {
+        "decrease": {
+          "point_estimate": -0.0531,
+          "bootstrap_mean": -0.0531,
+          "std_error": 0.0051,
+          "ci_95_lower": -0.0628,
+          "ci_95_upper": -0.0429,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        },
+        "increase": {
+          "point_estimate": 0.0539,
+          "bootstrap_mean": 0.0547,
+          "std_error": 0.0075,
+          "ci_95_lower": 0.0406,
+          "ci_95_upper": 0.0695,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        },
+        "no_significant_change": {
+          "point_estimate": 0.0162,
+          "bootstrap_mean": 0.0162,
+          "std_error": 0.0037,
+          "ci_95_lower": 0.0088,
+          "ci_95_upper": 0.0232,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        }
+      }
+    },
+    "config_5_vs_config_6_full_test": {
+      "n_samples": 66578,
+      "n_clusters": 30780,
+      "n_bootstrap": 1000,
+      "accuracy_diff": {
+        "point_estimate": -0.0001,
+        "bootstrap_mean": -0.0001,
+        "std_error": 0.001,
+        "ci_95_lower": -0.002,
+        "ci_95_upper": 0.0018,
+        "statistically_significant": false,
+        "p_value_empirical": 0.974
+      },
+      "macro_f1_diff": {
+        "point_estimate": 0.0017,
+        "bootstrap_mean": 0.0018,
+        "std_error": 0.0015,
+        "ci_95_lower": -0.0014,
+        "ci_95_upper": 0.0044,
+        "statistically_significant": false,
+        "p_value_empirical": 0.228
+      },
+      "per_class_f1_diff": {
+        "decrease": {
+          "point_estimate": 0.0029,
+          "bootstrap_mean": 0.0031,
+          "std_error": 0.0046,
+          "ci_95_lower": -0.0073,
+          "ci_95_upper": 0.0112,
+          "statistically_significant": false,
+          "p_value_empirical": 0.466
+        },
+        "increase": {
+          "point_estimate": -0.0022,
+          "bootstrap_mean": -0.0022,
+          "std_error": 0.0013,
+          "ci_95_lower": -0.0049,
+          "ci_95_upper": 0.0002,
+          "statistically_significant": false,
+          "p_value_empirical": 0.082
+        },
+        "no_significant_change": {
+          "point_estimate": 0.0045,
+          "bootstrap_mean": 0.0045,
+          "std_error": 0.0016,
+          "ci_95_lower": 0.0014,
+          "ci_95_upper": 0.0075,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        }
+      }
+    },
+    "config_5_vs_config_2_novel_catalysts": {
+      "n_samples": 27018,
+      "n_clusters": 26853,
+      "n_bootstrap": 1000,
+      "accuracy_diff": {
+        "point_estimate": 0.0182,
+        "bootstrap_mean": 0.0182,
+        "std_error": 0.0028,
+        "ci_95_lower": 0.0129,
+        "ci_95_upper": 0.0239,
+        "statistically_significant": true,
+        "p_value_empirical": 0.001
+      },
+      "macro_f1_diff": {
+        "point_estimate": 0.0137,
+        "bootstrap_mean": 0.0137,
+        "std_error": 0.0028,
+        "ci_95_lower": 0.0085,
+        "ci_95_upper": 0.0194,
+        "statistically_significant": true,
+        "p_value_empirical": 0.001
+      },
+      "per_class_f1_diff": {
+        "decrease": {
+          "point_estimate": -0.0512,
+          "bootstrap_mean": -0.0513,
+          "std_error": 0.004,
+          "ci_95_lower": -0.0594,
+          "ci_95_upper": -0.0434,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        },
+        "increase": {
+          "point_estimate": 0.0718,
+          "bootstrap_mean": 0.0719,
+          "std_error": 0.0047,
+          "ci_95_lower": 0.0626,
+          "ci_95_upper": 0.0806,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        },
+        "no_significant_change": {
+          "point_estimate": 0.0204,
+          "bootstrap_mean": 0.0204,
+          "std_error": 0.0041,
+          "ci_95_lower": 0.0126,
+          "ci_95_upper": 0.0282,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        }
+      }
+    },
+    "config_5_vs_config_6_novel_catalysts": {
+      "n_samples": 27018,
+      "n_clusters": 26853,
+      "n_bootstrap": 1000,
+      "accuracy_diff": {
+        "point_estimate": 0.0058,
+        "bootstrap_mean": 0.0058,
+        "std_error": 0.0017,
+        "ci_95_lower": 0.0026,
+        "ci_95_upper": 0.0092,
+        "statistically_significant": true,
+        "p_value_empirical": 0.001
+      },
+      "macro_f1_diff": {
+        "point_estimate": 0.0046,
+        "bootstrap_mean": 0.0047,
+        "std_error": 0.0017,
+        "ci_95_lower": 0.0013,
+        "ci_95_upper": 0.0082,
+        "statistically_significant": true,
+        "p_value_empirical": 0.006
+      },
+      "per_class_f1_diff": {
+        "decrease": {
+          "point_estimate": -0.0008,
+          "bootstrap_mean": -0.0007,
+          "std_error": 0.0033,
+          "ci_95_lower": -0.0069,
+          "ci_95_upper": 0.0058,
+          "statistically_significant": false,
+          "p_value_empirical": 0.846
+        },
+        "increase": {
+          "point_estimate": 0.0146,
+          "bootstrap_mean": 0.0147,
+          "std_error": 0.0024,
+          "ci_95_lower": 0.0101,
+          "ci_95_upper": 0.0196,
+          "statistically_significant": true,
+          "p_value_empirical": 0.001
+        },
+        "no_significant_change": {
+          "point_estimate": 0.0001,
+          "bootstrap_mean": 0.0001,
+          "std_error": 0.0019,
+          "ci_95_lower": -0.0037,
+          "ci_95_upper": 0.0036,
+          "statistically_significant": false,
+          "p_value_empirical": 0.95
+        }
+      }
+    }
+  },
+  "subgroup_robustness": {
+    "top_20_frequent_tickers": {
+      "subgroup_name": "Top 20 Mega-Frequency Tickers",
+      "sample_count": 5842,
+      "sample_pct": 8.77,
+      "config_2_headline_only": {
+        "accuracy": 0.3569,
+        "macro_f1": 0.3522
+      },
+      "config_5_headline_baseline": {
+        "accuracy": 0.2929,
+        "macro_f1": 0.281
+      },
+      "config_6_full_features": {
+        "accuracy": 0.2833,
+        "macro_f1": 0.2643
+      },
+      "delta_config5_minus_config2": {
+        "accuracy": -0.064,
+        "macro_f1": -0.0712
+      },
+      "delta_config5_minus_config6": {
+        "accuracy": 0.0096,
+        "macro_f1": 0.0167
+      }
+    },
+    "long_tail_tickers": {
+      "subgroup_name": "Remaining 3,359 Long-Tail Tickers",
+      "sample_count": 60736,
+      "sample_pct": 91.23,
+      "config_2_headline_only": {
+        "accuracy": 0.3598,
+        "macro_f1": 0.3409
+      },
+      "config_5_headline_baseline": {
+        "accuracy": 0.3932,
+        "macro_f1": 0.3515
+      },
+      "config_6_full_features": {
+        "accuracy": 0.3942,
+        "macro_f1": 0.3511
+      },
+      "delta_config5_minus_config2": {
+        "accuracy": 0.0334,
+        "macro_f1": 0.0107
+      },
+      "delta_config5_minus_config6": {
+        "accuracy": -0.001,
+        "macro_f1": 0.0004
+      }
+    },
+    "single_ticker_events": {
+      "subgroup_name": "Single-Ticker Events",
+      "sample_count": 27114,
+      "sample_pct": 40.73,
+      "config_2_headline_only": {
+        "accuracy": 0.3248,
+        "macro_f1": 0.3249
+      },
+      "config_5_headline_baseline": {
+        "accuracy": 0.343,
+        "macro_f1": 0.3386
+      },
+      "config_6_full_features": {
+        "accuracy": 0.3374,
+        "macro_f1": 0.334
+      },
+      "delta_config5_minus_config2": {
+        "accuracy": 0.0182,
+        "macro_f1": 0.0137
+      },
+      "delta_config5_minus_config6": {
+        "accuracy": 0.0057,
+        "macro_f1": 0.0045
+      }
+    },
+    "multi_ticker_events": {
+      "subgroup_name": "Multi-Ticker Syndicated Events",
+      "sample_count": 39464,
+      "sample_pct": 59.27,
+      "config_2_headline_only": {
+        "accuracy": 0.3834,
+        "macro_f1": 0.3377
+      },
+      "config_5_headline_baseline": {
+        "accuracy": 0.4128,
+        "macro_f1": 0.3379
+      },
+      "config_6_full_features": {
+        "accuracy": 0.4168,
+        "macro_f1": 0.3331
+      },
+      "delta_config5_minus_config2": {
+        "accuracy": 0.0294,
+        "macro_f1": 0.0002
+      },
+      "delta_config5_minus_config6": {
+        "accuracy": -0.004,
+        "macro_f1": 0.0048
+      }
+    }
+  },
+  "source_and_ticker_provenance": {
+    "unique_tickers_in_test": 3379,
+    "top_20_tickers": [
+      "TSLA",
+      "FXI",
+      "AAPL",
+      "FB",
+      "GILD",
+      "AMZN",
+      "UAL",
+      "DAL",
+      "GOOGL",
+      "GOOG",
+      "NFLX",
+      "LUV",
+      "INO",
+      "CCL",
+      "F",
+      "NVAX",
+      "EWU",
+      "SBUX",
+      "RSX",
+      "HTZ"
+    ],
+    "top_20_event_share_pct": 8.77,
+    "classification_sources": {
+      "rule_based_fallback": 66578
+    },
+    "context_sources": {
+      "rule_based_fallback": 66578
+    },
+    "dissemination_sources": {
+      "dataset_provided_date_only (dissemination_date)": 66578
+    }
+  },
+  "environment": {
+    "python_version": "3.14.2",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "scikit_learn_version": "1.9.1",
+    "pandas_version": "3.1.0",
+    "numpy_version": "2.5.4",
+    "joblib_version": "1.6.0",
+    "random_seed": 42,
+    "bootstrap_iterations": 1000
+  }
+}

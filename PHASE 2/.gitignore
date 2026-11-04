@@ -1,0 +1,28 @@
+.venv/
+.env
+*.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Data artifacts
+data/raw/*
+!data/raw/**/.gitkeep
+data/processed/*.csv
+data/processed/*.parquet
+!data/processed/training_data_schema.csv
+!data/processed/news_input_template.csv
+!data/processed/**/.gitkeep
+!data/processed/*.md
+*.db
+*.sqlite
+*.sqlite3
+
+# Preserve production ML models and metrics for deployment
+models/artifacts/*
+!models/artifacts/.gitkeep
+!models/artifacts/production/
+!models/artifacts/production/*
+!models/artifacts/*.joblib
+!models/artifacts/*.json
+!models/artifacts/*.md
